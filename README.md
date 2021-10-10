@@ -1,7 +1,7 @@
 # ogbn-mag_lstm_backup
 ### step 1 
 pseudo_ogbn_mag_same_subgraph.py
-Generate 6 full batch subgraphs and save to ‘DATA/’ folder
+Generate 6 full batch subgraphs and save to ‘DATA/’ folder\\
 {dataset}_{epoch-num}_subgraph.bin    # del binary format file for save graphs
 ### step 2 
 ### train one (batch size + batch NID selection method) combination data with block dataloader . e.g.(15341, 'range')
