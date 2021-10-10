@@ -2,7 +2,7 @@
 ### step 1 
 pseudo_ogbn_mag_same_subgraph.py
 Generate 6 full batch subgraphs and save to ‘DATA/’ folder  
-{dataset}_{epoch-num}_subgraph.bin  &nbsp; # dgl binary format file for save graphs
+{dataset}_{epoch-num}_subgraph.bin  &nbsp;&nbsp;&nbsp; # dgl binary format file for save graphs
 ### step 2 
 train one (batch size + batch NID selection method) combination data with block dataloader.    e.g.(15341, 'range')
 ### pseudo_ogbn_mag.py      
