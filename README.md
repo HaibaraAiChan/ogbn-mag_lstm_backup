@@ -16,7 +16,7 @@ Run training process to collect results
 
 
 
-### basic result for comparison
-products_pseudo_final_version.py
-block_dataloader.py
+basic result for comparison
+### products_pseudo_final_version.py
+### block_dataloader.py
 
