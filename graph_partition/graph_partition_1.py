@@ -1,5 +1,6 @@
 import numpy 
 import dgl
+from numpy.core.numeric import Infinity
 import torch
 import time
 
@@ -136,9 +137,10 @@ def initializeBuckets(args):
         ll.append(len(partitions[key]))
     
     max_in_degree=max(ll)
-    print(max_in_degree)
-    print(max_neighbors)
-    maxDegree= min(max_neighbors, max_in_degree)
+    # print(max_in_degree)
+    # print(max_neighbors)
+    # maxDegree= min(max_neighbors, max_in_degree)
+    maxDegree= max(max_neighbors, max_in_degree)
     print('maxDegree ',maxDegree)
     
     
@@ -147,7 +149,7 @@ def initializeBuckets(args):
         leftBuckets.append([])
         rightBuckets.append([])
     
-    print('leftBuckets ',leftBuckets)
+    # print('leftBuckets ',leftBuckets)
     
     return
     
@@ -163,7 +165,7 @@ def initializeBucketSort(nid, gain, side):
     if side ==0:
         maxGainIndex = maxLeftGainIndex
         maxGainIndex= max(index, maxGainIndex)
-        print(index)
+        # print(index)
         leftBuckets[index].append(nid)
         gains[nid]=gain
         maxLeftGainIndex = maxGainIndex
@@ -208,7 +210,7 @@ def initializeGain(raw_graph, bit_dict):
 def get_weight_list(batched_seeds_list):
     
     output_num = len(sum(batched_seeds_list,[]))
-    print(output_num)
+    # print(output_num)
     weights_list = []
     for seeds in batched_seeds_list:
 		# temp = len(i)/output_num
@@ -226,8 +228,13 @@ def gen_partition_input_out( bit_dict):
     
 def incrementGain(cur_bucket, nid, cur_side):
     
-    global maxGainIndex, maxLeftGainIndex, maxRightGainIndex, maxDegree, gains 
+    global maxGainIndex;
+    global maxLeftGainIndex;
+    global maxRightGainIndex; 
+    global maxDegree; 
+    global gains ;
     
+    # maxGainIndex=-Infinity
     
     if cur_side == 0:
         maxGainIndex=maxLeftGainIndex
@@ -239,7 +246,8 @@ def incrementGain(cur_bucket, nid, cur_side):
     bucketIndex=cur_bucket[maxDegree+gain]
     if bucketIndex:
         bucketIndex.remove(nid) # remove node nid 
-    
+    # if maxDegree+gain+2>2*maxDegree:
+        # print()
     nextBucketIndex = cur_bucket[maxDegree+gain+2]    
     nextBucketIndex.insert(0,nid)
     gains[nid]=gain+2
@@ -253,7 +261,12 @@ def incrementGain(cur_bucket, nid, cur_side):
     return cur_bucket
     
 def decrementGain(comp_bucket, nid, cur_side):
-    global maxGainIndex, maxLeftGainIndex, maxRightGainIndex, maxDegree , gains
+    global maxGainIndex
+    global maxLeftGainIndex 
+    global maxRightGainIndex 
+    global maxDegree  
+    global gains;
+    
     if cur_side == 0:
         maxGainIndex=maxLeftGainIndex
     else:
@@ -263,8 +276,8 @@ def decrementGain(comp_bucket, nid, cur_side):
     gain = gains[nid]
     bucketIndex=comp_bucket[maxDegree+gain]
     if bucketIndex:
-        if nid not in bucketIndex:
-            print(nid)
+        # if nid not in bucketIndex:
+            # print(nid)
         bucketIndex.remove(nid) # remove node nid 
     
     nextBucketIndex = comp_bucket[maxDegree+gain-2]    
@@ -395,7 +408,7 @@ def balance_check_all_partitions(partition_dst_src_list,alpha):
     return balance_flag
     
 def balance_check_and_exchange(bit_dict,alpha):
-    global side
+    # global side
     global partitions
     A_o=[k for k in bit_dict if bit_dict[k] == 0]
     B_o=[k for k in bit_dict if bit_dict[k] == 1]
@@ -404,17 +417,25 @@ def balance_check_and_exchange(bit_dict,alpha):
     len_A_part = len(list(set(A_in+A_o)))
     len_B_part = len(list(set(B_in+B_o)))
         
-    avg = (len(A_in)+len(B_in))/2
-    side = 0
-    if len_B_part>0 and len_A_part>0 and (len_A_part-len_B_part) < 0:
+    # avg = (len(A_in)+len(B_in))/2
+    # side = 0
+    if len_B_part>0 and len_A_part>0 and abs(len_A_part-len_B_part) > 0:
         
-        side = 1
-        for k in A_o:
-            bit_dict[k] = 1;
-        for m in B_o:
-            bit_dict[m] = 0;
+        # side = 1
+        if len_A_part>len_B_part:
+            for k in A_o:
+                bit_dict[k] = 0
+            for m in B_o:
+                bit_dict[m] = 1
+                
+        if len_A_part<len_B_part:
+            for k in A_o:
+                bit_dict[k] = 1
+            for m in B_o:
+                bit_dict[m] = 0
    
-    return bit_dict, side
+    return bit_dict
+    # return bit_dict, side
     
 
        
@@ -436,9 +457,9 @@ def gen_src_nodes_dict(raw_graph, block_to_graph, batched_seeds_list):
                 if in_i in sub_in_nids:
                     temp.append(in_i)  
             partitions[nid]=temp
-    print('partitions dict {dst: [src nodes]}')
-    print(partitions)
-    print()
+    # print('partitions dict {dst: [src nodes]}')
+    # print(partitions)
+    # print()
     return partitions
     
     
@@ -510,15 +531,18 @@ def walk_terminate_0( raw_graph,cost,args, ideal_part_in_size):
     global side
     
     print('walk_terminate_0')
-    print(bit_dict)
+    # bit_dict, side=balance_check_and_exchange(bit_dict, args.alpha)
+    bit_dict=balance_check_and_exchange(bit_dict, args.alpha)
+    # print(bit_dict)
        # initialize locked nodes
     bestCost = cost   # best cost in this segment
     bottom = bit_dict   # bottom of this segment
     flag = False
     best_bit_dict=bottom  # best bit dict in this segment
+    
     initializeBuckets(args)  # Invokes a method to calculate max Degree and initializes bucket with 2*maxDegree+1 size
     initializeGain(raw_graph, bit_dict) # compute initial gain for the segment
-    bit_dict, side=balance_check_and_exchange(bit_dict, args.alpha)
+    
     A_in, B_in, A_o, B_o = gen_partition_input_out(bit_dict)# global variable partitions dict {output:[input nodes]}
     subgraph_o = A_o+B_o
     locked_nodes={id:False for id in subgraph_o}
@@ -529,7 +553,7 @@ def walk_terminate_0( raw_graph,cost,args, ideal_part_in_size):
         updateGain(locked_nodes,args.alpha)
         totalSteps+=1
         A_in, B_in, A_o, B_o = gen_partition_input_out( bit_dict)
-        print(bit_dict)
+        # print(bit_dict)
         len_A_part = len(list(set(A_in+A_o)))
         len_B_part = len(list(set(B_in+B_o)))
         
@@ -538,22 +562,17 @@ def walk_terminate_0( raw_graph,cost,args, ideal_part_in_size):
         if tmpCost < bestCost: 
             bestCost = tmpCost
             best_bit_dict = bit_dict
-            flag = True
-		
-        elif (tmpCost == bestCost) and (not flag)  :
-            flag = True
-            bottom =  bit_dict
-            best_bit_dict = bit_dict
         
 		
     totalSegments +=1 
     if (bestCost < cost) : #is there improvement?
         bit_dict = best_bit_dict
         cost = bestCost
-        return True
+        return True, bestCost
 	
     bit_dict = best_bit_dict
-    return False
+    
+    return False,bestCost
  
 def graph_partition(raw_graph, batched_seeds_list, block_to_graph, args):
     global maxGainIndex
@@ -575,7 +594,7 @@ def graph_partition(raw_graph, batched_seeds_list, block_to_graph, args):
     full_batch_seeds = block_to_graph.dstdata['_ID'].tolist()
     num_batch=args.num_batch
     balance_flag = False
-    res=[]
+    # res=[]
     # print(partition_list)
     print('{}-'*40)
     partitions=gen_src_nodes_dict(raw_graph, block_to_graph, batched_seeds_list)
@@ -588,7 +607,7 @@ def graph_partition(raw_graph, batched_seeds_list, block_to_graph, args):
         partition_dst_src_list = gen_partition_dst_src_list(batched_seeds_list)
         # use global variable partitions to generate input nodes lists for each partition
         balance_flag=balance_check_all_partitions(partition_dst_src_list,args.alpha)
-        print(balance_flag)
+        # print(balance_flag)
         num_random_init+=1
         print('num_random_init, '+str(num_random_init))
         
@@ -598,7 +617,7 @@ def graph_partition(raw_graph, batched_seeds_list, block_to_graph, args):
     
     
     
-    tmp=[]
+    
     i=0
     for i in range(num_batch-1):
         # print(partition_list[i])
@@ -616,30 +635,33 @@ def graph_partition(raw_graph, batched_seeds_list, block_to_graph, args):
         InitializeBitList([A_o,B_o])
         cost=getRedundancyCost(len_A_part,len_B_part,ideal_part_in_size)
         print('-'*80)
+        
         pass_=0
-        
-        
         while pass_<10:
             if args.walkterm==0:
-                if not walk_terminate_0(raw_graph,cost, args,ideal_part_in_size):
+                improvement,cost=walk_terminate_0(raw_graph,cost, args,ideal_part_in_size)
+                print(improvement)
+                print(cost)
+                if not improvement:
+                    print(cost)
                     tmp=get_output_mini_batch(bit_dict)
                     batched_seeds_list=update_Batched_Seeds_list(batched_seeds_list, i, i+1)
                     # via bit_dict to update batched_seeds_list
                     print('pass '+str(pass_)+'  '+str(tmp))
-                    res.append(tmp)
+                    # res.append(tmp)
                     break
                     
+                # maxGainIndex=0
+                # maxLeftGainIndex=0
+                # maxRightGainIndex=0
+                # gains={}
+                # leftBuckets=[] 
+                # rightBuckets=[]
+                # side=0
+                
             pass_ +=1
         
-        if i==num_batch-2: # add last batch output nodes
-        
-            mm= list(sum(res,[]))
-            mm.sort()
-            print(mm)
-            print(sorted(full_batch_seeds))
-            res.append(list(set(full_batch_seeds).difference(sum(res,[]))))
-            
-        # res.append(tt)
+       
     
         #--------------------- initialization checking done   ----------------   
         maxGainIndex=0
@@ -655,13 +677,14 @@ def graph_partition(raw_graph, batched_seeds_list, block_to_graph, args):
         side=0
         
     print('-'*50)
-    print(res)
+    # print(res)
     
     weight_list=get_weight_list(batched_seeds_list)
-    batched_seeds_list= res
+    # batched_seeds_list= res
     p_list=gen_partition_dst_src_list(batched_seeds_list)
     len_list=[len(p) for p in p_list]
-    return res, weight_list, len_list
+    print(batched_seeds_list)
+    return batched_seeds_list, weight_list, len_list
     
  
 	
