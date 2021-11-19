@@ -283,7 +283,10 @@ def generate_dataloader_partition(raw_graph, block_to_graph, args):
 	
 	# print('time of batches_nid_list generation : ' + str(t1 - tt) + ' sec')
 	
-	batched_output_nid_list,weights_list,batch_list_generation_time =random_init_graph_partition(raw_graph, block_to_graph, args)
+	batched_output_nid_list,weights_list,batch_list_generation_time, p_len_list=random_init_graph_partition(raw_graph, block_to_graph, args)
+	print('partition_len_list')
+	print(p_len_list)
+	
 	data_loader, time_1 = generate_blocks(raw_graph, block_to_graph, batched_output_nid_list)
 	connection_time, block_gen_time, mean_block_gen_time = time_1
 	# batch_list_generation_time = t1 - tt
