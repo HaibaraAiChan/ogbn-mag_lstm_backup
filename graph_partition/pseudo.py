@@ -407,13 +407,15 @@ if __name__=='__main__':
 	argparser.add_argument('--num-hidden', type=int, default=16)
 	argparser.add_argument('--num-layers', type=int, default=1)
 	# argparser.add_argument('--fan-out', type=str, default='20')
-	argparser.add_argument('--fan-out', type=str, default='5')
+	argparser.add_argument('--fan-out', type=str, default='2')
 	argparser.add_argument('--num-batch', type=int, default=6)
 	argparser.add_argument('--target-redun', type=float, default=1.9)
-	argparser.add_argument('--alpha', type=float, default=0.9)
+	argparser.add_argument('--alpha', type=float, default=0.2)
 	argparser.add_argument('--walkterm', type=int, default=0)
+	
+	argparser.add_argument('--batch-size', type=int, default=4)
 
-	argparser.add_argument('--batch-size', type=int, default=157393)
+	# argparser.add_argument('--batch-size', type=int, default=157393)
 	# argparser.add_argument('--batch-size', type=int, default=78697)
 	# argparser.add_argument('--batch-size', type=int, default=39349)
 	# argparser.add_argument('--batch-size', type=int, default=19675)
