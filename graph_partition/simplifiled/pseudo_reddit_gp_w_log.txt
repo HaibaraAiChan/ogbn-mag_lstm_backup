@@ -1,0 +1,2740 @@
+main start at this time 1639632338.151379
+success----------------------------------------
+153431
+23831
+55703
+#nodes: 232965
+#edges: 114615892
+#classes: 41
+Epoch 0
+cur_subgraph.ndata
+217122
+
+Epoch 1
+cur_subgraph.ndata
+217171
+
+Epoch 2
+cur_subgraph.ndata
+217320
+
+Epoch 3
+cur_subgraph.ndata
+217292
+
+Epoch 4
+cur_subgraph.ndata
+217333
+
+Epoch 5
+cur_subgraph.ndata
+217191
+
+========after full batch subgraphs of data loading===================================================
+6
+Epoch 0
+transfer time:  0.10483026504516602
+----------------------------graph partition start---------------------
+{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-
+
+-------------------------------------------------------------  compare batch pair  (0,1)
+batch_seeds_list len 
+19179, 19179, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08781242370605469
+	InitializeBitList time :  0.0053479671478271484
+	getRedundancyCost: time   0.00023245811462402344
+
+					length of partitions 109686, 109660
+
+	before terminate 1 the redundancy rate:  4.040972356555301
+	--------------------------------------------------------------------------------
+	walk terminate 1
+Using backend: pytorch
+the number of node ready to move A-> B is : 12673
+
+ redundancy 3.537605585799689
+the number of node really move A-> B is : 12673
+the number of node ready to move B->A is : 12675
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.90337229760227
+the number of node really  move  from B->A is : 6337
+			one update redundancy spend time _*_	 19.64079999923706
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12843 25515
+			 len_A_part, len_B_part: ( 84553, 127324)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.90337229760227 3.1154097696226084 4.691334825581931
+the number of node ready to move A-> B is : 5824
+
+ redundancy 4.004366208859535
+the number of node really move A-> B is : 5824
+the number of node ready to move B->A is : 4753
+ redundancy 3.938154585901014
+the number of node really  move  from B->A is : 4753
+			one update redundancy spend time _*_	 21.28784680366516
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24444 13914
+			 len_A_part, len_B_part: ( 124266, 89499)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.938154585901014 4.578660845054854 3.2976483267471743
+the number of node ready to move A-> B is : 2380
+
+ redundancy 3.9878040917088087
+the number of node really move A-> B is : 2380
+the number of node ready to move B->A is : 1292
+ redundancy 3.9648676780796053
+the number of node really  move  from B->A is : 1292
+			one update redundancy spend time _*_	 21.52365279197693
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23356 15002
+			 len_A_part, len_B_part: ( 121258, 93957)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9648676780796053 4.467829146746991 3.46190620941222
+		update redundancy of segment   62.69542169570923
+	walk terminate 1 spend time 62.768492698669434
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.040972356555301
+	pass 0  
+partition_src_list len 
+93957, 121258, 109454, 109470, 109541, 109440, 109378, 109432, 
+
+	--------------------------------------------------end of batch 0
+-------------------------------------------------------------  compare batch pair  (1,2)
+batch_seeds_list len 
+15002, 23356, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.07598423957824707
+	InitializeBitList time :  0.005867719650268555
+	getRedundancyCost: time   9.72747802734375e-05
+
+					length of partitions 121258, 109454
+
+	before terminate 1 the redundancy rate:  4.250366153591068
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13134
+
+ redundancy 3.915181326627426
+the number of node really move A-> B is : 13134
+the number of node ready to move B->A is : 13539
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.191615773620361
+the number of node really  move  from B->A is : 6769
+			one update redundancy spend time _*_	 22.113423109054565
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  16991 25544
+			 len_A_part, len_B_part: ( 100288, 127235)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.191615773620361 3.69517598400899 4.688055563231732
+the number of node ready to move A-> B is : 6352
+
+ redundancy 4.225937491364302
+the number of node really move A-> B is : 6352
+the number of node ready to move B->A is : 6575
+ redundancy 4.190068256556222
+the number of node really  move  from B->A is : 6575
+			one update redundancy spend time _*_	 22.102041482925415
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  25767 16768
+			 len_A_part, len_B_part: ( 127256, 100183)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.190068256556222 4.688829321763801 3.691307191348643
+the number of node ready to move A-> B is : 2133
+
+ redundancy 4.22193973894861
+the number of node really move A-> B is : 2133
+the number of node ready to move B->A is : 2421
+ redundancy 4.184615101187351
+the number of node really  move  from B->A is : 2421
+			one update redundancy spend time _*_	 21.965978622436523
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26055 16480
+			 len_A_part, len_B_part: ( 127837, 99306)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.184615101187351 4.710236641151058 3.6589935612236437
+		update redundancy of segment   66.44876074790955
+	walk terminate 1 spend time 66.53307461738586
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.250366153591068
+	pass 0  
+partition_src_list len 
+93957, 99306, 127837, 109470, 109541, 109440, 109378, 109432, 
+
+	--------------------------------------------------end of batch 1
+-------------------------------------------------------------  compare batch pair  (2,3)
+batch_seeds_list len 
+15002, 16480, 26055, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.0810384750366211
+	InitializeBitList time :  0.007236957550048828
+	getRedundancyCost: time   0.00011181831359863281
+
+					length of partitions 127837, 109470
+
+	before terminate 1 the redundancy rate:  4.371864665948177
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13501
+
+ redundancy 4.11381619550299
+the number of node really move A-> B is : 13501
+the number of node ready to move B->A is : 13871
+ redundancy 4.36757214837741
+the number of node really  move  from B->A is : 13871
+			one update redundancy spend time _*_	 23.440762996673584
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  26425 18809
+			 len_A_part, len_B_part: ( 129314, 107760)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.36757214837741 4.764657657906615 3.970486638848205
+			 ---balanced                  ----*---*----redundancy rate:  4.36757214837741
+the number of node ready to move A-> B is : 7129
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.3708698335498015
+the number of node really move A-> B is : 222
+the number of node ready to move B->A is : 4016
+ redundancy 4.289256731238658
+the number of node really  move  from B->A is : 4016
+			one update redundancy spend time _*_	 23.356284379959106
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  30219 15015
+			 len_A_part, len_B_part: ( 138101, 94722)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.289256731238658 5.0884203351111355 3.490093127366181
+the number of node ready to move A-> B is : 6602
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.370998793305146
+the number of node really move A-> B is : 3301
+the number of node ready to move B->A is : 1003
+ redundancy 4.354270870754691
+the number of node really  move  from B->A is : 1003
+			one update redundancy spend time _*_	 23.614415645599365
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  27921 17313
+			 len_A_part, len_B_part: ( 133085, 103267)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.354270870754691 4.903602582879671 3.8049391586297103
+		update redundancy of segment   70.69998240470886
+	walk terminate 1 spend time 70.78907799720764
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.36757214837741
+	--------------------------------------------------end of batch 2
+-------------------------------------------------------------  compare batch pair  (3,4)
+batch_seeds_list len 
+15002, 16480, 26055, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.07933878898620605
+	InitializeBitList time :  0.007177829742431641
+	getRedundancyCost: time   9.369850158691406e-05
+
+					length of partitions 109470, 109541
+
+	before terminate 1 the redundancy rate:  4.034800711120937
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12760
+
+ redundancy 3.536868672912003
+the number of node really move A-> B is : 12760
+the number of node ready to move B->A is : 12879
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.907499009773307
+the number of node really  move  from B->A is : 6439
+			one update redundancy spend time _*_	 19.960842609405518
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12858 25500
+			 len_A_part, len_B_part: ( 84818, 127283)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.907499009773307 3.125173865384438 4.689824154162176
+the number of node ready to move A-> B is : 5834
+
+ redundancy 4.008585035141533
+the number of node really move A-> B is : 5834
+the number of node ready to move B->A is : 4710
+ redundancy 3.93949945192104
+the number of node really  move  from B->A is : 4710
+			one update redundancy spend time _*_	 21.45657706260681
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24376 13982
+			 len_A_part, len_B_part: ( 123845, 89993)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.93949945192104 4.563148828769079 3.3158500750730004
+the number of node ready to move A-> B is : 2224
+
+ redundancy 3.9826825471393965
+the number of node really move A-> B is : 2224
+the number of node ready to move B->A is : 1261
+ redundancy 3.959414522710734
+the number of node really  move  from B->A is : 1261
+			one update redundancy spend time _*_	 21.702631950378418
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23413 14945
+			 len_A_part, len_B_part: ( 121299, 93620)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.959414522710734 4.469339818166745 3.4494892272547233
+		update redundancy of segment   63.35194802284241
+	walk terminate 1 spend time 63.43547177314758
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.034800711120937
+	pass 0  
+partition_src_list len 
+93957, 99306, 127837, 93620, 121299, 109440, 109378, 109432, 
+
+	--------------------------------------------------end of batch 3
+-------------------------------------------------------------  compare batch pair  (4,5)
+batch_seeds_list len 
+15002, 16480, 26055, 14945, 23413, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08180117607116699
+	InitializeBitList time :  0.007493257522583008
+	getRedundancyCost: time   9.489059448242188e-05
+
+					length of partitions 121299, 109440
+
+	before terminate 1 the redundancy rate:  4.250863569790257
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13176
+
+ redundancy 3.9145365278507014
+the number of node really move A-> B is : 13176
+the number of node ready to move B->A is : 13552
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.193808089461225
+the number of node really  move  from B->A is : 6776
+			one update redundancy spend time _*_	 23.183892011642456
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  17013 25579
+			 len_A_part, len_B_part: ( 100705, 126937)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.193808089461225 3.710540617717228 4.677075561205221
+the number of node ready to move A-> B is : 6234
+
+ redundancy 4.2234319875461726
+the number of node really move A-> B is : 6234
+the number of node ready to move B->A is : 6590
+ redundancy 4.188004900470704
+the number of node really  move  from B->A is : 6590
+			one update redundancy spend time _*_	 22.66622233390808
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  25935 16657
+			 len_A_part, len_B_part: ( 127180, 100147)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.188004900470704 4.686029052790597 3.689980748150809
+the number of node ready to move A-> B is : 2068
+
+ redundancy 4.219065778686637
+the number of node really move A-> B is : 2068
+the number of node ready to move B->A is : 2426
+ redundancy 4.182256979946758
+the number of node really  move  from B->A is : 2426
+			one update redundancy spend time _*_	 22.87680983543396
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26293 16299
+			 len_A_part, len_B_part: ( 128229, 98786)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.182256979946758 4.724680133749689 3.639833826143827
+		update redundancy of segment   69.0134871006012
+	walk terminate 1 spend time 69.10119581222534
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.250863569790257
+	pass 0  
+partition_src_list len 
+93957, 99306, 127837, 93620, 98786, 128229, 109378, 109432, 
+
+	--------------------------------------------------end of batch 4
+-------------------------------------------------------------  compare batch pair  (5,6)
+batch_seeds_list len 
+15002, 16480, 26055, 14945, 16299, 26293, 19179, 19178, 
+
+	preparing two sides time :  0.0873250961303711
+	InitializeBitList time :  0.007280826568603516
+	getRedundancyCost: time   9.083747863769531e-05
+
+					length of partitions 128229, 109378
+
+	before terminate 1 the redundancy rate:  4.377391512605816
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13333
+
+ redundancy 4.130820460386326
+the number of node really move A-> B is : 13333
+the number of node ready to move B->A is : 13985
+ redundancy 4.36480872504859
+the number of node really  move  from B->A is : 13985
+			one update redundancy spend time _*_	 23.012142181396484
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  26945 18527
+			 len_A_part, len_B_part: ( 130256, 106668)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.36480872504859 4.799366254916591 3.9302511951805896
+			 ---balanced                  ----*---*----redundancy rate:  4.36480872504859
+the number of node ready to move A-> B is : 7049
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.373227954790394
+the number of node really move A-> B is : 440
+the number of node ready to move B->A is : 3947
+ redundancy 4.292922872854892
+the number of node really  move  from B->A is : 3947
+			one update redundancy spend time _*_	 23.6980721950531
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  30452 15020
+			 len_A_part, len_B_part: ( 138457, 94565)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.292922872854892 5.101537384511933 3.484308361197852
+the number of node ready to move A-> B is : 6490
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.371311981282412
+the number of node really move A-> B is : 3245
+the number of node ready to move B->A is : 963
+ redundancy 4.353755031733311
+the number of node really  move  from B->A is : 963
+			one update redundancy spend time _*_	 23.549999237060547
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  28170 17302
+			 len_A_part, len_B_part: ( 133388, 102936)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.353755031733311 4.914766813128103 3.7927432503385194
+		update redundancy of segment   70.5469560623169
+	walk terminate 1 spend time 70.64234399795532
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.36480872504859
+	--------------------------------------------------end of batch 5
+-------------------------------------------------------------  compare batch pair  (6,7)
+batch_seeds_list len 
+15002, 16480, 26055, 14945, 16299, 26293, 19179, 19178, 
+
+	preparing two sides time :  0.07891964912414551
+	InitializeBitList time :  0.00690770149230957
+	getRedundancyCost: time   9.679794311523438e-05
+
+					length of partitions 109378, 109432
+
+	before terminate 1 the redundancy rate:  4.031097723860318
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12766
+
+ redundancy 3.5265150468400255
+the number of node really move A-> B is : 12766
+the number of node ready to move B->A is : 12696
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.898913974631774
+the number of node really  move  from B->A is : 6348
+			one update redundancy spend time _*_	 19.87791132926941
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12760 25597
+			 len_A_part, len_B_part: ( 84227, 127408)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.898913974631774 3.103398089553339 4.694429859710209
+the number of node ready to move A-> B is : 5742
+
+ redundancy 4.001326443197833
+the number of node really move A-> B is : 5742
+the number of node ready to move B->A is : 4710
+ redundancy 3.9290905573824855
+the number of node really  move  from B->A is : 4710
+			one update redundancy spend time _*_	 22.50063419342041
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24565 13792
+			 len_A_part, len_B_part: ( 124199, 89074)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9290905573824855 4.576192186881109 3.2819889278838623
+the number of node ready to move A-> B is : 2155
+
+ redundancy 3.9722920754230344
+the number of node really move A-> B is : 2155
+the number of node ready to move B->A is : 1281
+ redundancy 3.9486555945505293
+the number of node really  move  from B->A is : 1281
+			one update redundancy spend time _*_	 21.360485315322876
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23691 14666
+			 len_A_part, len_B_part: ( 121810, 92525)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9486555945505293 4.488167942447103 3.409143246653955
+		update redundancy of segment   63.98573684692383
+	walk terminate 1 spend time 64.0707905292511
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.031097723860318
+	pass 0  
+partition_src_list len 
+93957, 99306, 127837, 93620, 98786, 128229, 92525, 121810, 
+
+	--------------------------------------------------end of batch 6
+graph partition total spend  470.00151562690735
+random_init_graph_partition spend  470.0305666923523
+partition_len_list
+[93957, 99306, 127837, 93620, 98786, 128229, 92525, 121810]
+
+----main run function: block dataloader generation total  spend:  472.994474
+
+current Epoch training on CPU with block data loading Time(s): 2.2164
+----------------------------------------------------------pseudo_mini_loss sum 5.459895610809326
+Epoch 00000 | Step 00007 | Loss 0.8475 | Train Acc 0.0270 | Speed (samples/sec) 172638.8697 | GPU 0.5130 GB
+		 current epoch data from CPU -> GPU time	:1.28065829 s
+		 current epoch GPU training time	:0.87939052 s
+		 current epoch total CPU time without optimizer step	:2.20354247 s
+		 avg batch tranfer data from CPU -> GPU time	:0.16008229 s
+		 avg batch GPU training time	:0.10992381 s
+		 avg batch  CPU time without optimizer step	:0.27544281 s
+Epoch 1
+transfer time:  0.10437989234924316
+----------------------------graph partition start---------------------
+{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-
+
+-------------------------------------------------------------  compare batch pair  (0,1)
+batch_seeds_list len 
+19179, 19179, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08081841468811035
+	InitializeBitList time :  0.005167722702026367
+	getRedundancyCost: time   9.202957153320312e-05
+
+					length of partitions 109109, 109699
+
+	before terminate 1 the redundancy rate:  4.030151355383546
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12713
+
+ redundancy 3.5321658969199388
+the number of node really move A-> B is : 12713
+the number of node ready to move B->A is : 12724
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.901294371716298
+the number of node really  move  from B->A is : 6362
+			one update redundancy spend time _*_	 21.12440323829651
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12828 25530
+			 len_A_part, len_B_part: ( 84423, 127389)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.901294371716298 3.10991799089197 4.692670752540625
+the number of node ready to move A-> B is : 5846
+
+ redundancy 4.001381399910669
+the number of node really move A-> B is : 5846
+the number of node ready to move B->A is : 4615
+ redundancy 3.932863964341464
+the number of node really  move  from B->A is : 4615
+			one update redundancy spend time _*_	 22.722877979278564
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24299 14059
+			 len_A_part, len_B_part: ( 123563, 89963)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.932863964341464 4.551731124321387 3.31399680436154
+the number of node ready to move A-> B is : 2207
+
+ redundancy 3.9732008417330125
+the number of node really move A-> B is : 2207
+the number of node ready to move B->A is : 1323
+ redundancy 3.950951093838496
+the number of node really  move  from B->A is : 1323
+			one update redundancy spend time _*_	 22.93133807182312
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23415 14943
+			 len_A_part, len_B_part: ( 121302, 93206)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.950951093838496 4.468441919040756 3.433460268636236
+		update redundancy of segment   67.02269792556763
+	walk terminate 1 spend time 67.10034728050232
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.030151355383546
+	pass 0  
+partition_src_list len 
+93206, 121302, 109457, 109308, 109455, 109352, 109280, 109497, 
+
+	--------------------------------------------------end of batch 0
+-------------------------------------------------------------  compare batch pair  (1,2)
+batch_seeds_list len 
+14943, 23415, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.0837545394897461
+	InitializeBitList time :  0.008091211318969727
+	getRedundancyCost: time   0.00010180473327636719
+
+					length of partitions 121302, 109457
+
+	before terminate 1 the redundancy rate:  4.250272826482357
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13297
+
+ redundancy 3.907114670006585
+the number of node really move A-> B is : 13297
+the number of node ready to move B->A is : 13405
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.182971022834541
+the number of node really  move  from B->A is : 6702
+			one update redundancy spend time _*_	 24.078733444213867
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  16820 25774
+			 len_A_part, len_B_part: ( 99634, 127471)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.182971022834541 3.6702506319904593 4.695691413678622
+the number of node ready to move A-> B is : 6020
+
+ redundancy 4.223547342877271
+the number of node really move A-> B is : 6020
+the number of node ready to move B->A is : 6608
+ redundancy 4.169930607677821
+the number of node really  move  from B->A is : 6608
+			one update redundancy spend time _*_	 23.44329857826233
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  26362 16232
+			 len_A_part, len_B_part: ( 128139, 98258)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.169930607677821 4.720298750754014 3.619562464601627
+the number of node ready to move A-> B is : 2142
+
+ redundancy 4.208922922489651
+the number of node really move A-> B is : 2142
+the number of node ready to move B->A is : 2421
+ redundancy 4.16742566917314
+the number of node really  move  from B->A is : 2421
+			one update redundancy spend time _*_	 23.370638608932495
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26641 15953
+			 len_A_part, len_B_part: ( 128885, 97376)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.16742566917314 4.747779399643599 3.5870719387026813
+		update redundancy of segment   71.1761155128479
+	walk terminate 1 spend time 71.2667384147644
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.250272826482357
+	pass 0  
+partition_src_list len 
+93206, 97376, 128885, 109308, 109455, 109352, 109280, 109497, 
+
+	--------------------------------------------------end of batch 1
+-------------------------------------------------------------  compare batch pair  (2,3)
+batch_seeds_list len 
+14943, 15953, 26641, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08882546424865723
+	InitializeBitList time :  0.009115219116210938
+	getRedundancyCost: time   9.822845458984375e-05
+
+					length of partitions 128885, 109308
+
+	before terminate 1 the redundancy rate:  4.387197185627915
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13509
+
+ redundancy 4.153464320742641
+the number of node really move A-> B is : 13509
+the number of node ready to move B->A is : 14196
+ redundancy 4.38253726326259
+the number of node really  move  from B->A is : 14196
+			one update redundancy spend time _*_	 24.31424331665039
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  27328 18492
+			 len_A_part, len_B_part: ( 130973, 106967)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.38253726326259 4.824695746669675 3.9403787798555054
+the number of node ready to move A-> B is : 7035
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.3870866736350616
+the number of node really move A-> B is : 219
+the number of node ready to move B->A is : 3848
+ redundancy 4.303539607037772
+the number of node really  move  from B->A is : 3848
+			one update redundancy spend time _*_	 24.54718327522278
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  30957 14863
+			 len_A_part, len_B_part: ( 139440, 94211)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.303539607037772 5.136597427833366 3.470481786242178
+the number of node ready to move A-> B is : 6516
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.3830161485649555
+the number of node really move A-> B is : 3258
+the number of node ready to move B->A is : 861
+ redundancy 4.366236744316691
+the number of node really  move  from B->A is : 861
+			one update redundancy spend time _*_	 24.418426990509033
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  28560 17260
+			 len_A_part, len_B_part: ( 134319, 102736)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.366236744316691 4.9479534560323435 3.784520032601038
+		update redundancy of segment   73.5539903640747
+	walk terminate 1 spend time 73.65189242362976
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.387197185627915
+	pass 0  
+partition_src_list len 
+93206, 97376, 102736, 134319, 109455, 109352, 109280, 109497, 
+
+	--------------------------------------------------end of batch 2
+-------------------------------------------------------------  compare batch pair  (3,4)
+batch_seeds_list len 
+14943, 15953, 17260, 28560, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.09652161598205566
+	InitializeBitList time :  0.007850170135498047
+	getRedundancyCost: time   0.0001289844512939453
+
+					length of partitions 134319, 109455
+
+	before terminate 1 the redundancy rate:  4.4899917576472
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 15170
+
+ redundancy 4.241689728370731
+the number of node really move A-> B is : 15170
+the number of node ready to move B->A is : 14219
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.4722545827942035
+the number of node really  move  from B->A is : 7109
+			one update redundancy spend time _*_	 25.838403463363647
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  20499 27240
+			 len_A_part, len_B_part: ( 111482, 131329)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.4722545827942035 4.10669932910011 4.837809836488297
+			 ---balanced                  ----*---*----redundancy rate:  4.4722545827942035
+the number of node ready to move A-> B is : 6405
+
+ redundancy 4.48129814754272
+the number of node really move A-> B is : 6405
+the number of node ready to move B->A is : 8057
+ redundancy 4.454996293243573
+the number of node really  move  from B->A is : 8057
+			one update redundancy spend time _*_	 24.660401105880737
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  28892 18847
+			 len_A_part, len_B_part: ( 134678, 107196)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.454996293243573 4.961178057843819 3.948814528643327
+the number of node ready to move A-> B is : 1905
+
+ redundancy 4.484760856652132
+the number of node really move A-> B is : 1905
+the number of node ready to move B->A is : 3474
+ redundancy 4.424402889888613
+the number of node really  move  from B->A is : 3474
+			one update redundancy spend time _*_	 25.266231060028076
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  30461 17278
+			 len_A_part, len_B_part: ( 138077, 102136)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.424402889888613 5.0863881457469 3.762417634030326
+		update redundancy of segment   76.07419395446777
+	walk terminate 1 spend time 76.17358326911926
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.4722545827942035
+	--------------------------------------------------end of batch 3
+-------------------------------------------------------------  compare batch pair  (4,5)
+batch_seeds_list len 
+14943, 15953, 17260, 28560, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.07857394218444824
+	InitializeBitList time :  0.006591796875
+	getRedundancyCost: time   9.274482727050781e-05
+
+					length of partitions 109455, 109352
+
+	before terminate 1 the redundancy rate:  4.03013293671807
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12548
+
+ redundancy 3.5430329095505386
+the number of node really move A-> B is : 12548
+the number of node ready to move B->A is : 12836
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.908717093902961
+the number of node really  move  from B->A is : 6418
+			one update redundancy spend time _*_	 20.566298723220825
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  13049 25309
+			 len_A_part, len_B_part: ( 85383, 126832)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.908717093902961 3.1452818286051083 4.6721523592008145
+the number of node ready to move A-> B is : 5749
+
+ redundancy 3.9999079066726217
+the number of node really move A-> B is : 5749
+the number of node ready to move B->A is : 4797
+ redundancy 3.933637548291439
+the number of node really  move  from B->A is : 4797
+			one update redundancy spend time _*_	 23.04880166053772
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24357 14001
+			 len_A_part, len_B_part: ( 123484, 90084)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.933637548291439 4.548820975176244 3.3184541214066337
+the number of node ready to move A-> B is : 2183
+
+ redundancy 3.9777502521054835
+the number of node really move A-> B is : 2183
+the number of node ready to move B->A is : 1300
+ redundancy 3.9545611522717126
+the number of node really  move  from B->A is : 1300
+			one update redundancy spend time _*_	 23.087918758392334
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23474 14884
+			 len_A_part, len_B_part: ( 121278, 93426)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9545611522717126 4.467557823097928 3.441564481445497
+		update redundancy of segment   66.94112205505371
+	walk terminate 1 spend time 67.03023982048035
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.03013293671807
+	pass 0  
+partition_src_list len 
+93206, 97376, 102736, 134319, 93426, 121278, 109280, 109497, 
+
+	--------------------------------------------------end of batch 4
+-------------------------------------------------------------  compare batch pair  (5,6)
+batch_seeds_list len 
+14943, 15953, 17260, 28560, 14884, 23474, 19179, 19178, 
+
+	preparing two sides time :  0.07892918586730957
+	InitializeBitList time :  0.0059931278228759766
+	getRedundancyCost: time   0.00011515617370605469
+
+					length of partitions 121278, 109280
+
+	before terminate 1 the redundancy rate:  4.246570674721763
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13175
+
+ redundancy 3.9123455710016533
+the number of node really move A-> B is : 13175
+the number of node ready to move B->A is : 13548
+ redundancy 4.246110208084873
+the number of node really  move  from B->A is : 13548
+			one update redundancy spend time _*_	 23.44038462638855
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  23847 18806
+			 len_A_part, len_B_part: ( 122546, 107987)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.246110208084873 4.514267558744031 3.977952857425715
+			 ---balanced                  ----*---*----redundancy rate:  4.246110208084873
+the number of node ready to move A-> B is : 6042
+
+ redundancy 4.238245437926795
+the number of node really move A-> B is : 6042
+the number of node ready to move B->A is : 4173
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.243494757587339
+the number of node really  move  from B->A is : 260
+			one update redundancy spend time _*_	 24.132814168930054
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  18065 24588
+			 len_A_part, len_B_part: ( 105520, 124871)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.243494757587339 3.8870751619691397 4.599914353205539
+			 ---balanced                  ----*---*----redundancy rate:  4.243494757587339
+the number of node ready to move A-> B is : 3817
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.245281368138471
+the number of node really move A-> B is : 119
+the number of node ready to move B->A is : 2594
+ redundancy 4.201094989662524
+the number of node really  move  from B->A is : 2594
+			one update redundancy spend time _*_	 23.919788360595703
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  27063 15590
+			 len_A_part, len_B_part: ( 130891, 97198)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.201094989662524 4.821675085531678 3.5805148937933704
+		update redundancy of segment   71.76616048812866
+	walk terminate 1 spend time 71.84931778907776
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.243494757587339
+	--------------------------------------------------end of batch 5
+-------------------------------------------------------------  compare batch pair  (6,7)
+batch_seeds_list len 
+14943, 15953, 17260, 28560, 14884, 23474, 19179, 19178, 
+
+	preparing two sides time :  0.0736696720123291
+	InitializeBitList time :  0.006739139556884766
+	getRedundancyCost: time   0.00010085105895996094
+
+					length of partitions 109280, 109497
+
+	before terminate 1 the redundancy rate:  4.0295803767538025
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12791
+
+ redundancy 3.5267508092701143
+the number of node really move A-> B is : 12791
+the number of node ready to move B->A is : 12637
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.894497884155804
+the number of node really  move  from B->A is : 6318
+			one update redundancy spend time _*_	 20.496796131134033
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12705 25652
+			 len_A_part, len_B_part: ( 83785, 127658)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.894497884155804 3.0864157737451134 4.702579994566494
+the number of node ready to move A-> B is : 5701
+
+ redundancy 3.9954505896275285
+the number of node really move A-> B is : 5701
+the number of node ready to move B->A is : 4655
+ redundancy 3.9252386368345684
+the number of node really  move  from B->A is : 4655
+			one update redundancy spend time _*_	 22.35468316078186
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24606 13751
+			 len_A_part, len_B_part: ( 124303, 88809)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9252386368345684 4.578990749225265 3.2714865244438713
+the number of node ready to move A-> B is : 2299
+
+ redundancy 3.975871548226973
+the number of node really move A-> B is : 2299
+the number of node ready to move B->A is : 1230
+ redundancy 3.955187386897882
+the number of node really  move  from B->A is : 1230
+			one update redundancy spend time _*_	 22.77412748336792
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23537 14820
+			 len_A_part, len_B_part: ( 121523, 93215)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.955187386897882 4.476582969180968 3.433791804614797
+		update redundancy of segment   65.87262463569641
+	walk terminate 1 spend time 65.95588254928589
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.0295803767538025
+	pass 0  
+partition_src_list len 
+93206, 97376, 102736, 134319, 93426, 121278, 93215, 121523, 
+
+	--------------------------------------------------end of batch 6
+graph partition total spend  495.83560013771057
+random_init_graph_partition spend  495.85789346694946
+partition_len_list
+[93206, 97376, 102736, 134319, 93426, 121278, 93215, 121523]
+
+----main run function: block dataloader generation total  spend:  499.271830
+
+current Epoch training on CPU with block data loading Time(s): 0.8372
+----------------------------------------------------------pseudo_mini_loss sum 4.595357418060303
+		 current epoch data from CPU -> GPU time	:0.74446138 s
+		 current epoch GPU training time	:0.04195520 s
+		 current epoch total CPU time without optimizer step	:0.83090377 s
+		 avg batch tranfer data from CPU -> GPU time	:0.09305767 s
+		 avg batch GPU training time	:0.00524440 s
+		 avg batch  CPU time without optimizer step	:0.10386297 s
+Epoch 2
+transfer time:  0.1233522891998291
+----------------------------graph partition start---------------------
+{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-
+
+-------------------------------------------------------------  compare batch pair  (0,1)
+batch_seeds_list len 
+19179, 19179, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.09701204299926758
+	InitializeBitList time :  0.006142377853393555
+	getRedundancyCost: time   0.00012540817260742188
+
+					length of partitions 109800, 109485
+
+	before terminate 1 the redundancy rate:  4.036167863059084
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12795
+
+ redundancy 3.529983434566538
+the number of node really move A-> B is : 12795
+the number of node ready to move B->A is : 12601
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.9011779863795324
+the number of node really  move  from B->A is : 6300
+			one update redundancy spend time _*_	 21.702125310897827
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12684 25674
+			 len_A_part, len_B_part: ( 84157, 127794)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9011779863795324 3.097993741947359 4.704362230811706
+the number of node ready to move A-> B is : 5626
+
+ redundancy 4.00480397570403
+the number of node really move A-> B is : 5626
+the number of node ready to move B->A is : 4698
+ redundancy 3.9299282164549973
+the number of node really  move  from B->A is : 4698
+			one update redundancy spend time _*_	 23.66528344154358
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24746 13612
+			 len_A_part, len_B_part: ( 125005, 88508)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9299282164549973 4.601693355420578 3.2581630774894164
+the number of node ready to move A-> B is : 2200
+
+ redundancy 3.978096815755568
+the number of node really move A-> B is : 2200
+the number of node ready to move B->A is : 1217
+ redundancy 3.9535247561200073
+the number of node really  move  from B->A is : 1217
+			one update redundancy spend time _*_	 23.950073719024658
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23763 14595
+			 len_A_part, len_B_part: ( 122383, 92412)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9535247561200073 4.505172096447635 3.40187741579238
+		update redundancy of segment   69.57561016082764
+	walk terminate 1 spend time 69.66067337989807
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.036167863059084
+	pass 0  
+partition_src_list len 
+92412, 122383, 109605, 109261, 109301, 109170, 109588, 109448, 
+
+	--------------------------------------------------end of batch 0
+-------------------------------------------------------------  compare batch pair  (1,2)
+batch_seeds_list len 
+14595, 23763, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.0876462459564209
+	InitializeBitList time :  0.009249448776245117
+	getRedundancyCost: time   9.441375732421875e-05
+
+					length of partitions 122383, 109605
+
+	before terminate 1 the redundancy rate:  4.2699797533591015
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13401
+
+ redundancy 3.9310877967973497
+the number of node really move A-> B is : 13401
+the number of node ready to move B->A is : 13503
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.205153690410455
+the number of node really  move  from B->A is : 6751
+			one update redundancy spend time _*_	 24.836339473724365
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  17113 25829
+			 len_A_part, len_B_part: ( 100529, 127937)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.205153690410455 3.700681023375667 4.709626357445242
+the number of node ready to move A-> B is : 6042
+
+ redundancy 4.245554942020982
+the number of node really move A-> B is : 6042
+the number of node ready to move B->A is : 6737
+ redundancy 4.197717651389656
+the number of node really  move  from B->A is : 6737
+			one update redundancy spend time _*_	 24.765081644058228
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  26524 16418
+			 len_A_part, len_B_part: ( 128860, 99202)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.197717651389656 4.743603902079882 3.6518314006994292
+the number of node ready to move A-> B is : 2054
+
+ redundancy 4.235431621571875
+the number of node really move A-> B is : 2054
+the number of node ready to move B->A is : 2375
+ redundancy 4.1936499171728325
+the number of node really  move  from B->A is : 2375
+			one update redundancy spend time _*_	 25.106712341308594
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26845 16097
+			 len_A_part, len_B_part: ( 129557, 98284)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.1936499171728325 4.769261917909074 3.6180379164365912
+		update redundancy of segment   75.00892901420593
+	walk terminate 1 spend time 75.10275530815125
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.2699797533591015
+	pass 0  
+partition_src_list len 
+92412, 98284, 129557, 109261, 109301, 109170, 109588, 109448, 
+
+	--------------------------------------------------end of batch 1
+-------------------------------------------------------------  compare batch pair  (2,3)
+batch_seeds_list len 
+14595, 16097, 26845, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.09038710594177246
+	InitializeBitList time :  0.009544610977172852
+	getRedundancyCost: time   9.5367431640625e-05
+
+					length of partitions 129557, 109261
+
+	before terminate 1 the redundancy rate:  4.395692987299834
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13543
+
+ redundancy 4.160500644211302
+the number of node really move A-> B is : 13543
+the number of node ready to move B->A is : 14204
+ redundancy 4.388422602613657
+the number of node really  move  from B->A is : 14204
+			one update redundancy spend time _*_	 25.67616033554077
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  27506 18518
+			 len_A_part, len_B_part: ( 131773, 106650)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.388422602613657 4.850837474691699 3.926007730535616
+the number of node ready to move A-> B is : 7329
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.392269464384318
+the number of node really move A-> B is : 229
+the number of node ready to move B->A is : 3832
+ redundancy 4.310454629118351
+the number of node really  move  from B->A is : 3832
+			one update redundancy spend time _*_	 26.45057463645935
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  31109 14915
+			 len_A_part, len_B_part: ( 139813, 94374)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.310454629118351 5.146806552549236 3.4741027056874656
+the number of node ready to move A-> B is : 6742
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.392214246272777
+the number of node really move A-> B is : 3371
+the number of node ready to move B->A is : 873
+ redundancy 4.37739738634272
+the number of node really  move  from B->A is : 873
+			one update redundancy spend time _*_	 25.84446692466736
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  28611 17413
+			 len_A_part, len_B_part: ( 134343, 103481)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.37739738634272 4.9454445057979015 3.809350266887539
+		update redundancy of segment   78.25661563873291
+	walk terminate 1 spend time 78.36944341659546
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.395692987299834
+	pass 0  
+partition_src_list len 
+92412, 98284, 103481, 134343, 109301, 109170, 109588, 109448, 
+
+	--------------------------------------------------end of batch 2
+-------------------------------------------------------------  compare batch pair  (3,4)
+batch_seeds_list len 
+14595, 16097, 17413, 28611, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08910059928894043
+	InitializeBitList time :  0.008400440216064453
+	getRedundancyCost: time   0.0001010894775390625
+
+					length of partitions 134343, 109301
+
+	before terminate 1 the redundancy rate:  4.484520522731456
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 14915
+
+ redundancy 4.247045831032579
+the number of node really move A-> B is : 14915
+the number of node ready to move B->A is : 14308
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.469703662801399
+the number of node really  move  from B->A is : 7154
+			one update redundancy spend time _*_	 26.231031894683838
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  20850 26940
+			 len_A_part, len_B_part: ( 112132, 130707)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.469703662801399 4.127811522179274 4.811595803423523
+			 ---balanced                  ----*---*----redundancy rate:  4.469703662801399
+the number of node ready to move A-> B is : 6302
+
+ redundancy 4.4684152401987856
+the number of node really move A-> B is : 6302
+the number of node ready to move B->A is : 8307
+ redundancy 4.444855512608135
+the number of node really  move  from B->A is : 8307
+			one update redundancy spend time _*_	 25.63863754272461
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  28945 18845
+			 len_A_part, len_B_part: ( 134876, 106613)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.444855512608135 4.965065341431989 3.924645683784281
+the number of node ready to move A-> B is : 1965
+
+ redundancy 4.477029265599116
+the number of node really move A-> B is : 1965
+the number of node ready to move B->A is : 3542
+ redundancy 4.414724829744156
+the number of node really  move  from B->A is : 3542
+			one update redundancy spend time _*_	 26.394620418548584
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  30522 17268
+			 len_A_part, len_B_part: ( 138140, 101712)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.414724829744156 5.085219952144303 3.744229707344009
+		update redundancy of segment   78.56317806243896
+	walk terminate 1 spend time 78.6623420715332
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.469703662801399
+	--------------------------------------------------end of batch 3
+-------------------------------------------------------------  compare batch pair  (4,5)
+batch_seeds_list len 
+14595, 16097, 17413, 28611, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08381128311157227
+	InitializeBitList time :  0.007813215255737305
+	getRedundancyCost: time   0.00010347366333007812
+
+					length of partitions 109301, 109170
+
+	before terminate 1 the redundancy rate:  4.021185348794404
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12723
+
+ redundancy 3.5285293576293024
+the number of node really move A-> B is : 12723
+the number of node ready to move B->A is : 12832
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.899337382661513
+the number of node really  move  from B->A is : 6416
+			one update redundancy spend time _*_	 22.011367797851562
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12872 25486
+			 len_A_part, len_B_part: ( 84701, 127150)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.899337382661513 3.118019510399411 4.680655254923615
+the number of node ready to move A-> B is : 5841
+
+ redundancy 3.997478372906313
+the number of node really move A-> B is : 5841
+the number of node ready to move B->A is : 4706
+ redundancy 3.930388367384502
+the number of node really  move  from B->A is : 4706
+			one update redundancy spend time _*_	 23.51810598373413
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24351 14007
+			 len_A_part, len_B_part: ( 123868, 89670)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.930388367384502 4.559838026872814 3.30093870789619
+the number of node ready to move A-> B is : 2320
+
+ redundancy 3.9732560279771763
+the number of node really move A-> B is : 2320
+the number of node ready to move B->A is : 1260
+ redundancy 3.9520154610712313
+the number of node really  move  from B->A is : 1260
+			one update redundancy spend time _*_	 24.207330226898193
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23291 15067
+			 len_A_part, len_B_part: ( 120814, 93899)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9520154610712313 4.447413951776182 3.45661697036628
+		update redundancy of segment   69.9842278957367
+	walk terminate 1 spend time 70.06559300422668
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.021185348794404
+	pass 0  
+partition_src_list len 
+92412, 98284, 103481, 134343, 93899, 120814, 109588, 109448, 
+
+	--------------------------------------------------end of batch 4
+-------------------------------------------------------------  compare batch pair  (5,6)
+batch_seeds_list len 
+14595, 16097, 17413, 28611, 15067, 23291, 19179, 19178, 
+
+	preparing two sides time :  0.09397435188293457
+	InitializeBitList time :  0.008098363876342773
+	getRedundancyCost: time   0.00011849403381347656
+
+					length of partitions 120814, 109588
+
+	before terminate 1 the redundancy rate:  4.240787778391312
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13215
+
+ redundancy 3.8915332228971105
+the number of node really move A-> B is : 13215
+the number of node ready to move B->A is : 13466
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.173071967605375
+the number of node really  move  from B->A is : 6733
+			one update redundancy spend time _*_	 24.925909280776978
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  16809 25661
+			 len_A_part, len_B_part: ( 99565, 127158)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.173071967605375 3.6651941836922513 4.680949751518498
+the number of node ready to move A-> B is : 6196
+
+ redundancy 4.215037732376219
+the number of node really move A-> B is : 6196
+the number of node ready to move B->A is : 6689
+ redundancy 4.173881833241303
+the number of node really  move  from B->A is : 6689
+			one update redundancy spend time _*_	 24.916107892990112
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  26154 16316
+			 len_A_part, len_B_part: ( 128033, 98734)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.173881833241303 4.713160316583839 3.6346033498987667
+the number of node ready to move A-> B is : 2126
+
+ redundancy 4.210657095527333
+the number of node really move A-> B is : 2126
+the number of node ready to move B->A is : 2302
+ redundancy 4.171157739738634
+the number of node really  move  from B->A is : 2302
+			one update redundancy spend time _*_	 25.008237600326538
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26330 16140
+			 len_A_part, len_B_part: ( 128248, 98371)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.171157739738634 4.721074912571323 3.621240566905945
+		update redundancy of segment   75.12828779220581
+	walk terminate 1 spend time 75.23807001113892
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.240787778391312
+	pass 0  
+partition_src_list len 
+92412, 98284, 103481, 134343, 93899, 98371, 128248, 109448, 
+
+	--------------------------------------------------end of batch 5
+-------------------------------------------------------------  compare batch pair  (6,7)
+batch_seeds_list len 
+14595, 16097, 17413, 28611, 15067, 16140, 26330, 19178, 
+
+	preparing two sides time :  0.11400365829467773
+	InitializeBitList time :  0.010344743728637695
+	getRedundancyCost: time   0.00022482872009277344
+
+					length of partitions 128248, 109448
+
+	before terminate 1 the redundancy rate:  4.375041413583656
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13312
+
+ redundancy 4.136683232100129
+the number of node really move A-> B is : 13312
+the number of node ready to move B->A is : 14092
+ redundancy 4.3677158107859375
+the number of node really  move  from B->A is : 14092
+			one update redundancy spend time _*_	 25.52532720565796
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  27110 18398
+			 len_A_part, len_B_part: ( 130897, 106401)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.3677158107859375 4.818590097551997 3.9168415240198784
+the number of node ready to move A-> B is : 7044
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.372096447634824
+the number of node really move A-> B is : 220
+the number of node ready to move B->A is : 3924
+ redundancy 4.284962267623781
+the number of node really  move  from B->A is : 3924
+			one update redundancy spend time _*_	 25.885438442230225
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  30814 14694
+			 len_A_part, len_B_part: ( 139447, 93355)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.284962267623781 5.133333333333334 3.436591201914228
+the number of node ready to move A-> B is : 6516
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.3626725565985645
+the number of node really move A-> B is : 3258
+the number of node ready to move B->A is : 876
+ redundancy 4.347782072519786
+the number of node really  move  from B->A is : 876
+			one update redundancy spend time _*_	 26.13442373275757
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  28432 17076
+			 len_A_part, len_B_part: ( 134043, 102172)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.347782072519786 4.934400883489785 3.7611632615497883
+		update redundancy of segment   77.84435796737671
+	walk terminate 1 spend time 77.94551086425781
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.375041413583656
+	pass 0  
+partition_src_list len 
+92412, 98284, 103481, 134343, 93899, 98371, 102172, 134043, 
+
+	--------------------------------------------------end of batch 6
+graph partition total spend  528.4280211925507
+random_init_graph_partition spend  528.4514374732971
+partition_len_list
+[92412, 98284, 103481, 134343, 93899, 98371, 102172, 134043]
+
+----main run function: block dataloader generation total  spend:  531.586880
+
+current Epoch training on CPU with block data loading Time(s): 0.7124
+----------------------------------------------------------pseudo_mini_loss sum 3.8877997398376465
+		 current epoch data from CPU -> GPU time	:0.62235533 s
+		 current epoch GPU training time	:0.03926912 s
+		 current epoch total CPU time without optimizer step	:0.70763040 s
+		 avg batch tranfer data from CPU -> GPU time	:0.07779442 s
+		 avg batch GPU training time	:0.00490864 s
+		 avg batch  CPU time without optimizer step	:0.08845380 s
+Epoch 3
+transfer time:  0.11894559860229492
+----------------------------graph partition start---------------------
+{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-
+
+-------------------------------------------------------------  compare batch pair  (0,1)
+batch_seeds_list len 
+19179, 19179, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.09651350975036621
+	InitializeBitList time :  0.005682229995727539
+	getRedundancyCost: time   0.00011014938354492188
+
+					length of partitions 109850, 109720
+
+	before terminate 1 the redundancy rate:  4.041934355613645
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12851
+
+ redundancy 3.5313219078475044
+the number of node really move A-> B is : 12851
+the number of node ready to move B->A is : 12849
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.9103326399499294
+the number of node really  move  from B->A is : 6424
+			one update redundancy spend time _*_	 21.767269611358643
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12752 25606
+			 len_A_part, len_B_part: ( 84535, 127886)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9103326399499294 3.1123097030723637 4.708355576827495
+the number of node ready to move A-> B is : 5838
+
+ redundancy 4.01227840877713
+the number of node really move A-> B is : 5838
+the number of node ready to move B->A is : 4661
+ redundancy 3.943173241536734
+the number of node really  move  from B->A is : 4661
+			one update redundancy spend time _*_	 24.270769119262695
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24429 13929
+			 len_A_part, len_B_part: ( 124196, 90009)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.943173241536734 4.572501518693739 3.3138449643797285
+the number of node ready to move A-> B is : 2272
+
+ redundancy 3.9863409605507796
+the number of node really move A-> B is : 2272
+the number of node ready to move B->A is : 1243
+ redundancy 3.964784713657199
+the number of node really  move  from B->A is : 1243
+			one update redundancy spend time _*_	 23.27213191986084
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23400 14958
+			 len_A_part, len_B_part: ( 121438, 93941)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.964784713657199 4.470960734863686 3.4586086924507113
+		update redundancy of segment   69.5701367855072
+	walk terminate 1 spend time 69.65125489234924
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.041934355613645
+	pass 0  
+partition_src_list len 
+93941, 121438, 109209, 109188, 109380, 109366, 109464, 109053, 
+
+	--------------------------------------------------end of batch 0
+-------------------------------------------------------------  compare batch pair  (1,2)
+batch_seeds_list len 
+14958, 23400, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08403587341308594
+	InitializeBitList time :  0.0064084529876708984
+	getRedundancyCost: time   9.72747802734375e-05
+
+					length of partitions 121438, 109209
+
+	before terminate 1 the redundancy rate:  4.245844301677007
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13296
+
+ redundancy 3.899545312298658
+the number of node really move A-> B is : 13296
+the number of node ready to move B->A is : 13366
+ redundancy 4.244776613957256
+the number of node really  move  from B->A is : 13366
+			one update redundancy spend time _*_	 24.84150242805481
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  23470 19109
+			 len_A_part, len_B_part: ( 121935, 108654)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.244776613957256 4.489258693371132 4.00029453454338
+			 ---balanced                  ----*---*----redundancy rate:  4.244776613957256
+the number of node ready to move A-> B is : 6147
+
+ redundancy 4.227877694530862
+the number of node really move A-> B is : 6147
+the number of node ready to move B->A is : 4160
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.244132319643613
+the number of node really  move  from B->A is : 1040
+			one update redundancy spend time _*_	 25.006818771362305
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  18363 24216
+			 len_A_part, len_B_part: ( 106772, 123782)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.244132319643613 3.9310052832133717 4.557259356073854
+			 ---balanced                  ----*---*----redundancy rate:  4.244132319643613
+the number of node ready to move A-> B is : 3295
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.245328866226092
+the number of node really move A-> B is : 51
+the number of node ready to move B->A is : 2489
+ redundancy 4.20646871490897
+the number of node really  move  from B->A is : 2489
+			one update redundancy spend time _*_	 25.217596769332886
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26654 15925
+			 len_A_part, len_B_part: ( 130024, 98484)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.20646871490897 4.787069933545643 3.625867496272297
+		update redundancy of segment   75.33810186386108
+	walk terminate 1 spend time 75.42530798912048
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.244132319643613
+	--------------------------------------------------end of batch 1
+-------------------------------------------------------------  compare batch pair  (2,3)
+batch_seeds_list len 
+14958, 23400, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.07794308662414551
+	InitializeBitList time :  0.005998134613037109
+	getRedundancyCost: time   9.226799011230469e-05
+
+					length of partitions 109209, 109188
+
+	before terminate 1 the redundancy rate:  4.020341291902141
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12741
+
+ redundancy 3.522890856543269
+the number of node really move A-> B is : 12741
+the number of node ready to move B->A is : 12766
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.892660567347164
+the number of node really  move  from B->A is : 6383
+			one update redundancy spend time _*_	 21.67289113998413
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12821 25537
+			 len_A_part, len_B_part: ( 84170, 127291)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.892660567347164 3.0988715645306777 4.686449570163651
+the number of node ready to move A-> B is : 5829
+
+ redundancy 3.9941093091324116
+the number of node really move A-> B is : 5829
+the number of node ready to move B->A is : 4597
+ redundancy 3.9280783461885393
+the number of node really  move  from B->A is : 4597
+			one update redundancy spend time _*_	 23.967663049697876
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24305 14053
+			 len_A_part, len_B_part: ( 123403, 89982)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9280783461885393 4.543305782081255 3.3128509102958232
+the number of node ready to move A-> B is : 2313
+
+ redundancy 3.9682086777239842
+the number of node really move A-> B is : 2313
+the number of node ready to move B->A is : 1349
+ redundancy 3.9458792776540323
+the number of node really  move  from B->A is : 1349
+			one update redundancy spend time _*_	 23.375881910324097
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23341 15017
+			 len_A_part, len_B_part: ( 120643, 93709)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9458792776540323 4.441691364615356 3.4500671906927085
+		update redundancy of segment   69.2660870552063
+	walk terminate 1 spend time 69.34310364723206
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.020341291902141
+	pass 0  
+partition_src_list len 
+93941, 121438, 93709, 120643, 109380, 109366, 109464, 109053, 
+
+	--------------------------------------------------end of batch 2
+-------------------------------------------------------------  compare batch pair  (3,4)
+batch_seeds_list len 
+14958, 23400, 15017, 23341, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08716368675231934
+	InitializeBitList time :  0.008527517318725586
+	getRedundancyCost: time   0.0001010894775390625
+
+					length of partitions 120643, 109380
+
+	before terminate 1 the redundancy rate:  4.234357454485209
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13090
+
+ redundancy 3.904092189312078
+the number of node really move A-> B is : 13090
+the number of node ready to move B->A is : 13724
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.181525320766527
+the number of node really  move  from B->A is : 6862
+			one update redundancy spend time _*_	 24.767860889434814
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  17113 25407
+			 len_A_part, len_B_part: ( 100409, 126744)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.181525320766527 3.6967398707729693 4.6663107707600835
+the number of node ready to move A-> B is : 6485
+
+ redundancy 4.206818474679233
+the number of node really move A-> B is : 6485
+the number of node ready to move B->A is : 6477
+ redundancy 4.185630395964877
+the number of node really  move  from B->A is : 6477
+			one update redundancy spend time _*_	 24.399919748306274
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  25399 17121
+			 len_A_part, len_B_part: ( 125938, 101438)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.185630395964877 4.636636415514607 3.7346243764151463
+the number of node ready to move A-> B is : 2011
+
+ redundancy 4.212414631003442
+the number of node really move A-> B is : 2011
+the number of node ready to move B->A is : 2508
+ redundancy 4.175689855125821
+the number of node really  move  from B->A is : 2508
+			one update redundancy spend time _*_	 24.840336799621582
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  25896 16624
+			 len_A_part, len_B_part: ( 126954, 99882)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.175689855125821 4.674042302523793 3.6773374077278502
+		update redundancy of segment   74.2985417842865
+	walk terminate 1 spend time 74.3926203250885
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.234357454485209
+	pass 0  
+partition_src_list len 
+93941, 121438, 93709, 99882, 126954, 109366, 109464, 109053, 
+
+	--------------------------------------------------end of batch 3
+-------------------------------------------------------------  compare batch pair  (4,5)
+batch_seeds_list len 
+14958, 23400, 15017, 16624, 25896, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.09262490272521973
+	InitializeBitList time :  0.011047601699829102
+	getRedundancyCost: time   0.0003323554992675781
+
+					length of partitions 126954, 109366
+
+	before terminate 1 the redundancy rate:  4.35027520571397
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13319
+
+ redundancy 4.095042615466745
+the number of node really move A-> B is : 13319
+the number of node ready to move B->A is : 13957
+ redundancy 4.346133313697697
+the number of node really  move  from B->A is : 13957
+			one update redundancy spend time _*_	 25.409825325012207
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  26534 18541
+			 len_A_part, len_B_part: ( 129404, 106691)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.346133313697697 4.764243506433739 3.9280231209616554
+			 ---balanced                  ----*---*----redundancy rate:  4.346133313697697
+the number of node ready to move A-> B is : 7045
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.348195055501353
+the number of node really move A-> B is : 110
+the number of node ready to move B->A is : 3940
+ redundancy 4.265246764722125
+the number of node really  move  from B->A is : 3940
+			one update redundancy spend time _*_	 25.855016708374023
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  30364 14711
+			 len_A_part, len_B_part: ( 138373, 93328)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.265246764722125 5.094453546379986 3.436039983064264
+the number of node ready to move A-> B is : 6525
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.345157668022753
+the number of node really move A-> B is : 3262
+the number of node ready to move B->A is : 992
+ redundancy 4.328258748596358
+the number of node really  move  from B->A is : 992
+			one update redundancy spend time _*_	 25.1899516582489
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  28094 16981
+			 len_A_part, len_B_part: ( 133316, 101808)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.328258748596358 4.908270898146273 3.7482465990464444
+		update redundancy of segment   76.72597908973694
+	walk terminate 1 spend time 76.82689332962036
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.346133313697697
+	--------------------------------------------------end of batch 4
+-------------------------------------------------------------  compare batch pair  (5,6)
+batch_seeds_list len 
+14958, 23400, 15017, 16624, 25896, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.07486414909362793
+	InitializeBitList time :  0.005755901336669922
+	getRedundancyCost: time   9.72747802734375e-05
+
+					length of partitions 109366, 109464
+
+	before terminate 1 the redundancy rate:  4.028312132982347
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12753
+
+ redundancy 3.5294074333155385
+the number of node really move A-> B is : 12753
+the number of node ready to move B->A is : 12704
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.891850597352871
+the number of node really  move  from B->A is : 6352
+			one update redundancy spend time _*_	 21.67585301399231
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12778 25580
+			 len_A_part, len_B_part: ( 84122, 127295)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.891850597352871 3.097104357270401 4.68659683743534
+the number of node ready to move A-> B is : 5674
+
+ redundancy 3.993612282090459
+the number of node really move A-> B is : 5674
+the number of node ready to move B->A is : 4713
+ redundancy 3.923200117813817
+the number of node really  move  from B->A is : 4713
+			one update redundancy spend time _*_	 23.426049947738647
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24619 13739
+			 len_A_part, len_B_part: ( 124319, 88801)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.923200117813817 4.577029987298197 3.269370248329437
+the number of node ready to move A-> B is : 2261
+
+ redundancy 3.9698838429394545
+the number of node really move A-> B is : 2261
+the number of node ready to move B->A is : 1234
+ redundancy 3.9461554037884508
+the number of node really  move  from B->A is : 1234
+			one update redundancy spend time _*_	 23.65468668937683
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23592 14766
+			 len_A_part, len_B_part: ( 121526, 92841)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9461554037884508 4.47420061484086 3.4181101927360418
+		update redundancy of segment   68.99221634864807
+	walk terminate 1 spend time 69.072833776474
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.028312132982347
+	pass 0  
+partition_src_list len 
+93941, 121438, 93709, 99882, 126954, 92841, 121526, 109053, 
+
+	--------------------------------------------------end of batch 5
+-------------------------------------------------------------  compare batch pair  (6,7)
+batch_seeds_list len 
+14958, 23400, 15017, 16624, 25896, 14766, 23592, 19178, 
+
+	preparing two sides time :  0.09243392944335938
+	InitializeBitList time :  0.007005453109741211
+	getRedundancyCost: time   0.00010848045349121094
+
+					length of partitions 121526, 109053
+
+	before terminate 1 the redundancy rate:  4.244592529867644
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13124
+
+ redundancy 3.919113451024428
+the number of node really move A-> B is : 13124
+the number of node ready to move B->A is : 13489
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.189809104799072
+the number of node really  move  from B->A is : 6744
+			one update redundancy spend time _*_	 24.783394813537598
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  17212 25558
+			 len_A_part, len_B_part: ( 100942, 126661)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.189809104799072 3.716363234725623 4.663254974872522
+the number of node ready to move A-> B is : 6287
+
+ redundancy 4.220551147764299
+the number of node really move A-> B is : 6287
+the number of node ready to move B->A is : 6621
+ redundancy 4.182961176665501
+the number of node really  move  from B->A is : 6621
+			one update redundancy spend time _*_	 24.460057020187378
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  25892 16878
+			 len_A_part, len_B_part: ( 126881, 100350)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.182961176665501 4.671354674815456 3.6945676785155457
+the number of node ready to move A-> B is : 2177
+
+ redundancy 4.216077904386724
+the number of node really move A-> B is : 2177
+the number of node ready to move B->A is : 2560
+ redundancy 4.178340666016236
+the number of node really  move  from B->A is : 2560
+			one update redundancy spend time _*_	 24.34087634086609
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26275 16495
+			 len_A_part, len_B_part: ( 127886, 99094)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.178340666016236 4.708355576827495 3.6483257552049775
+		update redundancy of segment   73.86095428466797
+	walk terminate 1 spend time 73.956369638443
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.244592529867644
+	pass 0  
+partition_src_list len 
+93941, 121438, 93709, 99882, 126954, 92841, 99094, 127886, 
+
+	--------------------------------------------------end of batch 6
+graph partition total spend  511.53759694099426
+random_init_graph_partition spend  511.5595633983612
+partition_len_list
+[93941, 121438, 93709, 99882, 126954, 92841, 99094, 127886]
+
+----main run function: block dataloader generation total  spend:  515.683090
+
+current Epoch training on CPU with block data loading Time(s): 0.7284
+----------------------------------------------------------pseudo_mini_loss sum 3.3884615898132324
+		 current epoch data from CPU -> GPU time	:0.63892570 s
+		 current epoch GPU training time	:0.03985862 s
+		 current epoch total CPU time without optimizer step	:0.71876764 s
+		 avg batch tranfer data from CPU -> GPU time	:0.07986571 s
+		 avg batch GPU training time	:0.00498233 s
+		 avg batch  CPU time without optimizer step	:0.08984596 s
+Epoch 4
+transfer time:  0.12287449836730957
+----------------------------graph partition start---------------------
+{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-
+
+-------------------------------------------------------------  compare batch pair  (0,1)
+batch_seeds_list len 
+19179, 19179, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.10011553764343262
+	InitializeBitList time :  0.005923032760620117
+	getRedundancyCost: time   9.965896606445312e-05
+
+					length of partitions 109445, 109449
+
+	before terminate 1 the redundancy rate:  4.028730105414272
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12718
+
+ redundancy 3.527545287646147
+the number of node really move A-> B is : 12718
+the number of node ready to move B->A is : 12649
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.893858732912167
+the number of node really  move  from B->A is : 6324
+			one update redundancy spend time _*_	 22.16694450378418
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12785 25573
+			 len_A_part, len_B_part: ( 84119, 127447)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.893858732912167 3.0964096570700264 4.691307808754308
+the number of node ready to move A-> B is : 5757
+
+ redundancy 3.9970920200797853
+the number of node really move A-> B is : 5757
+the number of node ready to move B->A is : 4683
+ redundancy 3.9302452917872577
+the number of node really  move  from B->A is : 4683
+			one update redundancy spend time _*_	 24.50509786605835
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24499 13859
+			 len_A_part, len_B_part: ( 124247, 89296)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9302452917872577 4.573516217049413 3.286974366525102
+the number of node ready to move A-> B is : 2202
+
+ redundancy 3.975484624976419
+the number of node really move A-> B is : 2202
+the number of node ready to move B->A is : 1317
+ redundancy 3.9515950177837693
+the number of node really  move  from B->A is : 1317
+			one update redundancy spend time _*_	 24.314038515090942
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23614 14744
+			 len_A_part, len_B_part: ( 121763, 92940)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9515950177837693 4.482080493988487 3.4211095415790513
+		update redundancy of segment   71.2350504398346
+	walk terminate 1 spend time 71.31727910041809
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.028730105414272
+	pass 0  
+partition_src_list len 
+92940, 121763, 109375, 109219, 109331, 109251, 109595, 109642, 
+
+	--------------------------------------------------end of batch 0
+-------------------------------------------------------------  compare batch pair  (1,2)
+batch_seeds_list len 
+14744, 23614, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08148527145385742
+	InitializeBitList time :  0.006358623504638672
+	getRedundancyCost: time   0.00010085105895996094
+
+					length of partitions 121763, 109375
+
+	before terminate 1 the redundancy rate:  4.2540801442947
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13349
+
+ redundancy 3.917564290742777
+the number of node really move A-> B is : 13349
+the number of node ready to move B->A is : 13454
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.195147538569844
+the number of node really  move  from B->A is : 6727
+			one update redundancy spend time _*_	 25.685190677642822
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  16992 25801
+			 len_A_part, len_B_part: ( 100383, 127553)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.195147538569844 3.6950854219101563 4.695209655229532
+the number of node ready to move A-> B is : 6271
+
+ redundancy 4.230669065443352
+the number of node really move A-> B is : 6271
+the number of node ready to move B->A is : 6629
+ redundancy 4.19465060529234
+the number of node really  move  from B->A is : 6629
+			one update redundancy spend time _*_	 25.215715646743774
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  26159 16634
+			 len_A_part, len_B_part: ( 127891, 100018)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.19465060529234 4.7076513921033625 3.6816498184813167
+the number of node ready to move A-> B is : 2205
+
+ redundancy 4.228515687907497
+the number of node really move A-> B is : 2205
+the number of node ready to move B->A is : 2451
+ redundancy 4.186681267916055
+the number of node really  move  from B->A is : 2451
+			one update redundancy spend time _*_	 25.47471857070923
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26405 16388
+			 len_A_part, len_B_part: ( 128456, 99020)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.186681267916055 4.7284489700137575 3.6449135658183525
+		update redundancy of segment   76.64154624938965
+	walk terminate 1 spend time 76.73020553588867
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.2540801442947
+	pass 0  
+partition_src_list len 
+92940, 99020, 128456, 109219, 109331, 109251, 109595, 109642, 
+
+	--------------------------------------------------end of batch 1
+-------------------------------------------------------------  compare batch pair  (2,3)
+batch_seeds_list len 
+14744, 16388, 26405, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.09986400604248047
+	InitializeBitList time :  0.011575937271118164
+	getRedundancyCost: time   0.00012087821960449219
+
+					length of partitions 128456, 109219
+
+	before terminate 1 the redundancy rate:  4.374393212259528
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13562
+
+ redundancy 4.130435782876968
+the number of node really move A-> B is : 13562
+the number of node ready to move B->A is : 14025
+ redundancy 4.370491365784304
+the number of node really  move  from B->A is : 14025
+			one update redundancy spend time _*_	 26.037957191467285
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  26868 18716
+			 len_A_part, len_B_part: ( 130253, 107210)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.370491365784304 4.794596310730538 3.946386420838069
+			 ---balanced                  ----*---*----redundancy rate:  4.370491365784304
+the number of node ready to move A-> B is : 7019
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.374245972769897
+the number of node really move A-> B is : 219
+the number of node ready to move B->A is : 3835
+ redundancy 4.299190642930434
+the number of node really  move  from B->A is : 3835
+			one update redundancy spend time _*_	 26.40492820739746
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  30484 15100
+			 len_A_part, len_B_part: ( 138720, 94869)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.299190642930434 5.1062655004072095 3.4921157854536586
+the number of node ready to move A-> B is : 6516
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.342920771350876
+the number of node really move A-> B is : 1629
+the number of node ready to move B->A is : 970
+ redundancy 4.319215213520266
+the number of node really  move  from B->A is : 970
+			one update redundancy spend time _*_	 25.91940975189209
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  29825 15759
+			 len_A_part, len_B_part: ( 137361, 97316)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.319215213520266 5.056240883805036 3.5821895432354958
+		update redundancy of segment   78.65505695343018
+	walk terminate 1 spend time 78.75979733467102
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.370491365784304
+	--------------------------------------------------end of batch 2
+-------------------------------------------------------------  compare batch pair  (3,4)
+batch_seeds_list len 
+14744, 16388, 26405, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.07776308059692383
+	InitializeBitList time :  0.005979061126708984
+	getRedundancyCost: time   9.989738464355469e-05
+
+					length of partitions 109219, 109331
+
+	before terminate 1 the redundancy rate:  4.022398807360133
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12778
+
+ redundancy 3.5244900682363007
+the number of node really move A-> B is : 12778
+the number of node ready to move B->A is : 12690
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.8886869458388738
+the number of node really  move  from B->A is : 6345
+			one update redundancy spend time _*_	 22.11907124519348
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12746 25612
+			 len_A_part, len_B_part: ( 84062, 127223)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.8886869458388738 3.0943114943427825 4.683062397334965
+the number of node ready to move A-> B is : 5795
+
+ redundancy 3.991644158963434
+the number of node really move A-> B is : 5795
+the number of node ready to move B->A is : 4640
+ redundancy 3.9206931298974386
+the number of node really  move  from B->A is : 4640
+			one update redundancy spend time _*_	 24.060343503952026
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24457 13901
+			 len_A_part, len_B_part: ( 123901, 89123)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9206931298974386 4.560780001196321 3.280606258598556
+the number of node ready to move A-> B is : 2349
+
+ redundancy 3.968766823261999
+the number of node really move A-> B is : 2349
+the number of node ready to move B->A is : 1287
+ redundancy 3.947361882456875
+the number of node really  move  from B->A is : 1287
+			one update redundancy spend time _*_	 24.025394678115845
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23395 14963
+			 len_A_part, len_B_part: ( 121069, 93404)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.947361882456875 4.456534442537489 3.438189322376261
+		update redundancy of segment   70.45121431350708
+	walk terminate 1 spend time 70.53408241271973
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.022398807360133
+	pass 0  
+partition_src_list len 
+92940, 99020, 128456, 93404, 121069, 109251, 109595, 109642, 
+
+	--------------------------------------------------end of batch 3
+-------------------------------------------------------------  compare batch pair  (4,5)
+batch_seeds_list len 
+14744, 16388, 26405, 14963, 23395, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.0881814956665039
+	InitializeBitList time :  0.0075452327728271484
+	getRedundancyCost: time   0.00010347366333007812
+
+					length of partitions 121069, 109251
+
+	before terminate 1 the redundancy rate:  4.2390249064799175
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13167
+
+ redundancy 3.8988280656872174
+the number of node really move A-> B is : 13167
+the number of node ready to move B->A is : 13610
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.177202725771052
+the number of node really  move  from B->A is : 6805
+			one update redundancy spend time _*_	 25.128868579864502
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  17033 25541
+			 len_A_part, len_B_part: ( 100075, 126886)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.177202725771052 3.68374798120856 4.670657470333543
+the number of node ready to move A-> B is : 6271
+
+ redundancy 4.215098489414861
+the number of node really move A-> B is : 6271
+the number of node ready to move B->A is : 6530
+ redundancy 4.17889597990181
+the number of node really  move  from B->A is : 6530
+			one update redundancy spend time _*_	 24.94226861000061
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  25800 16774
+			 len_A_part, len_B_part: ( 126823, 100230)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.17889597990181 4.668338448371854 3.689453511431766
+the number of node ready to move A-> B is : 2037
+
+ redundancy 4.209871487532956
+the number of node really move A-> B is : 2037
+the number of node ready to move B->A is : 2512
+ redundancy 4.172362227549429
+the number of node really  move  from B->A is : 2512
+			one update redundancy spend time _*_	 25.092063426971436
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26275 16299
+			 len_A_part, len_B_part: ( 127902, 98796)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.172362227549429 4.708056300699847 3.63666815439901
+		update redundancy of segment   75.43531465530396
+	walk terminate 1 spend time 75.5284583568573
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.2390249064799175
+	pass 0  
+partition_src_list len 
+92940, 99020, 128456, 93404, 98796, 127902, 109595, 109642, 
+
+	--------------------------------------------------end of batch 4
+-------------------------------------------------------------  compare batch pair  (5,6)
+batch_seeds_list len 
+14744, 16388, 26405, 14963, 16299, 26275, 19179, 19178, 
+
+	preparing two sides time :  0.10045814514160156
+	InitializeBitList time :  0.011354923248291016
+	getRedundancyCost: time   0.000110626220703125
+
+					length of partitions 127902, 109595
+
+	before terminate 1 the redundancy rate:  4.371117133615235
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13357
+
+ redundancy 4.1337854812660755
+the number of node really move A-> B is : 13357
+the number of node ready to move B->A is : 14095
+ redundancy 4.365153934285175
+the number of node really  move  from B->A is : 14095
+			one update redundancy spend time _*_	 26.113882303237915
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  27013 18441
+			 len_A_part, len_B_part: ( 130652, 106521)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.365153934285175 4.809283449821242 3.9210244187491083
+the number of node ready to move A-> B is : 7093
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.36839320305706
+the number of node really move A-> B is : 221
+the number of node ready to move B->A is : 3842
+ redundancy 4.285423750649924
+the number of node really  move  from B->A is : 3842
+			one update redundancy spend time _*_	 25.85525941848755
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  30634 14820
+			 len_A_part, len_B_part: ( 138945, 93896)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.285423750649924 5.11454772169896 3.4562997796008887
+the number of node ready to move A-> B is : 6638
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.36375515913368
+the number of node really move A-> B is : 3319
+the number of node ready to move B->A is : 966
+ redundancy 4.346068015441742
+the number of node really  move  from B->A is : 966
+			one update redundancy spend time _*_	 26.289963722229004
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  28281 17173
+			 len_A_part, len_B_part: ( 133842, 102294)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.346068015441742 4.92670694280206 3.7654290880814236
+		update redundancy of segment   78.54809331893921
+	walk terminate 1 spend time 78.65313220024109
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.371117133615235
+	pass 0  
+partition_src_list len 
+92940, 99020, 128456, 93404, 98796, 102294, 133842, 109642, 
+
+	--------------------------------------------------end of batch 5
+-------------------------------------------------------------  compare batch pair  (6,7)
+batch_seeds_list len 
+14744, 16388, 26405, 14963, 16299, 17173, 28281, 19178, 
+
+	preparing two sides time :  0.10547971725463867
+	InitializeBitList time :  0.014470338821411133
+	getRedundancyCost: time   0.0001380443572998047
+
+					length of partitions 133842, 109642
+
+	before terminate 1 the redundancy rate:  4.481307486667925
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 15221
+
+ redundancy 4.216165975714687
+the number of node really move A-> B is : 15221
+the number of node ready to move B->A is : 14263
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.449835045759272
+the number of node really  move  from B->A is : 7131
+			one update redundancy spend time _*_	 26.760682582855225
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  20191 27268
+			 len_A_part, len_B_part: ( 110507, 131267)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.449835045759272 4.067748570166518 4.831921521352027
+			 ---balanced                  ----*---*----redundancy rate:  4.449835045759272
+the number of node ready to move A-> B is : 6283
+
+ redundancy 4.463933226891452
+the number of node really move A-> B is : 6283
+the number of node ready to move B->A is : 7929
+ redundancy 4.434927047434122
+the number of node really  move  from B->A is : 7929
+			one update redundancy spend time _*_	 26.06835961341858
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  28914 18545
+			 len_A_part, len_B_part: ( 134778, 106186)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.434927047434122 4.961160983375741 3.9086931114925023
+the number of node ready to move A-> B is : 1925
+
+ redundancy 4.46719090059954
+the number of node really move A-> B is : 1925
+the number of node ready to move B->A is : 3308
+ redundancy 4.410282837857113
+the number of node really  move  from B->A is : 3308
+			one update redundancy spend time _*_	 26.319105625152588
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  30297 17162
+			 len_A_part, len_B_part: ( 137770, 101855)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.410282837857113 5.0712961216198185 3.749269554094408
+		update redundancy of segment   79.4504463672638
+	walk terminate 1 spend time 79.56900572776794
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.449835045759272
+	--------------------------------------------------end of batch 6
+graph partition total spend  534.1384620666504
+random_init_graph_partition spend  534.1616780757904
+partition_len_list
+[92940, 99020, 128456, 93404, 98796, 102294, 133842, 109642]
+
+----main run function: block dataloader generation total  spend:  537.627237
+
+current Epoch training on CPU with block data loading Time(s): 0.7018
+----------------------------------------------------------pseudo_mini_loss sum 3.0241129398345947
+		 current epoch data from CPU -> GPU time	:0.61156640 s
+		 current epoch GPU training time	:0.03796208 s
+		 current epoch total CPU time without optimizer step	:0.68975711 s
+		 avg batch tranfer data from CPU -> GPU time	:0.07644580 s
+		 avg batch GPU training time	:0.00474526 s
+		 avg batch  CPU time without optimizer step	:0.08621964 s
+Epoch 5
+transfer time:  0.11874508857727051
+----------------------------graph partition start---------------------
+{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-{}-
+
+-------------------------------------------------------------  compare batch pair  (0,1)
+batch_seeds_list len 
+19179, 19179, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.1051332950592041
+	InitializeBitList time :  0.005591392517089844
+	getRedundancyCost: time   9.083747863769531e-05
+
+					length of partitions 109492, 109328
+
+	before terminate 1 the redundancy rate:  4.030001243145435
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12720
+
+ redundancy 3.53627912758816
+the number of node really move A-> B is : 12720
+the number of node ready to move B->A is : 12695
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.901911220999029
+the number of node really  move  from B->A is : 6347
+			one update redundancy spend time _*_	 22.649245738983154
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12806 25552
+			 len_A_part, len_B_part: ( 84492, 127373)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.901911220999029 3.1121731563462576 4.6916492856518
+the number of node ready to move A-> B is : 5642
+
+ redundancy 3.9983424727543957
+the number of node really move A-> B is : 5642
+the number of node ready to move B->A is : 4718
+ redundancy 3.925116602437486
+the number of node really  move  from B->A is : 4718
+			one update redundancy spend time _*_	 24.295464992523193
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24628 13730
+			 len_A_part, len_B_part: ( 124478, 88647)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.925116602437486 4.5850150328512695 3.265218172023703
+the number of node ready to move A-> B is : 2276
+
+ redundancy 3.9750818404077517
+the number of node really move A-> B is : 2276
+the number of node ready to move B->A is : 1286
+ redundancy 3.9507530238361626
+the number of node really  move  from B->A is : 1286
+			one update redundancy spend time _*_	 24.081149578094482
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23638 14720
+			 len_A_part, len_B_part: ( 121974, 92543)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9507530238361626 4.492782850118099 3.4087231975542265
+		update redundancy of segment   71.2728476524353
+	walk terminate 1 spend time 71.34736394882202
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.030001243145435
+	pass 0  
+partition_src_list len 
+92543, 121974, 109522, 109341, 109427, 109549, 109585, 109520, 
+
+	--------------------------------------------------end of batch 0
+-------------------------------------------------------------  compare batch pair  (1,2)
+batch_seeds_list len 
+14720, 23638, 19179, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08461666107177734
+	InitializeBitList time :  0.008301496505737305
+	getRedundancyCost: time   9.202957153320312e-05
+
+					length of partitions 121974, 109522
+
+	before terminate 1 the redundancy rate:  4.263454747204074
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13251
+
+ redundancy 3.934951264094737
+the number of node really move A-> B is : 13251
+the number of node ready to move B->A is : 13519
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.207006736006557
+the number of node really  move  from B->A is : 6759
+			one update redundancy spend time _*_	 25.18561577796936
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  17146 25671
+			 len_A_part, len_B_part: ( 100896, 127535)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.207006736006557 3.7163970882771387 4.697616383735975
+the number of node ready to move A-> B is : 6260
+
+ redundancy 4.243638088134407
+the number of node really move A-> B is : 6260
+the number of node ready to move B->A is : 6679
+ redundancy 4.202605080321008
+the number of node really  move  from B->A is : 6679
+			one update redundancy spend time _*_	 24.997042655944824
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  26090 16727
+			 len_A_part, len_B_part: ( 127988, 100204)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.202605080321008 4.714302158008389 3.6909080026336265
+the number of node ready to move A-> B is : 2153
+
+ redundancy 4.235718791294299
+the number of node really move A-> B is : 2153
+the number of node ready to move B->A is : 2511
+ redundancy 4.193230842898647
+the number of node really  move  from B->A is : 2511
+			one update redundancy spend time _*_	 25.124969244003296
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26448 16369
+			 len_A_part, len_B_part: ( 128546, 99137)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.193230842898647 4.734855495853879 3.651606189943414
+		update redundancy of segment   75.57794094085693
+	walk terminate 1 spend time 75.66818499565125
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.263454747204074
+	pass 0  
+partition_src_list len 
+92543, 99137, 128546, 109341, 109427, 109549, 109585, 109520, 
+
+	--------------------------------------------------end of batch 1
+-------------------------------------------------------------  compare batch pair  (2,3)
+batch_seeds_list len 
+14720, 16369, 26448, 19179, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.10439038276672363
+	InitializeBitList time :  0.009241580963134766
+	getRedundancyCost: time   0.0002262592315673828
+
+					length of partitions 128546, 109341
+
+	before terminate 1 the redundancy rate:  4.3811575986113604
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13052
+
+ redundancy 4.162898094304092
+the number of node really move A-> B is : 13052
+the number of node ready to move B->A is : 14177
+ redundancy 4.365134835237187
+the number of node really  move  from B->A is : 14177
+			one update redundancy spend time _*_	 25.56148672103882
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  27573 18054
+			 len_A_part, len_B_part: ( 131573, 105444)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.365134835237187 4.846351828574849 3.8839178418995264
+the number of node ready to move A-> B is : 7045
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.37395656357768
+the number of node really move A-> B is : 440
+the number of node ready to move B->A is : 3844
+ redundancy 4.2866785456119265
+the number of node really  move  from B->A is : 3844
+			one update redundancy spend time _*_	 25.939875841140747
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  30977 14650
+			 len_A_part, len_B_part: ( 139450, 93307)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.2866785456119265 5.136492764433148 3.436864326790705
+the number of node ready to move A-> B is : 6481
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.367381705503451
+the number of node really move A-> B is : 3240
+the number of node ready to move B->A is : 863
+ redundancy 4.351064270618949
+the number of node really  move  from B->A is : 863
+			one update redundancy spend time _*_	 25.594237565994263
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  28600 17027
+			 len_A_part, len_B_part: ( 134346, 101907)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.351064270618949 4.9484923408428525 3.753636200395044
+		update redundancy of segment   77.3801338672638
+	walk terminate 1 spend time 77.47429370880127
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.3811575986113604
+	pass 0  
+partition_src_list len 
+92543, 99137, 101907, 134346, 109427, 109549, 109585, 109520, 
+
+	--------------------------------------------------end of batch 2
+-------------------------------------------------------------  compare batch pair  (3,4)
+batch_seeds_list len 
+14720, 16369, 17027, 28600, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08908867835998535
+	InitializeBitList time :  0.009034395217895508
+	getRedundancyCost: time   0.00010919570922851562
+
+					length of partitions 134346, 109427
+
+	before terminate 1 the redundancy rate:  4.489559880473869
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 14911
+
+ redundancy 4.248131828666934
+the number of node really move A-> B is : 14911
+the number of node ready to move B->A is : 14176
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.474789471018597
+the number of node really  move  from B->A is : 7088
+			one update redundancy spend time _*_	 26.308439254760742
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  20777 27002
+			 len_A_part, len_B_part: ( 112304, 130667)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.474789471018597 4.136598662007174 4.81298028003002
+			 ---balanced                  ----*---*----redundancy rate:  4.474789471018597
+the number of node ready to move A-> B is : 6348
+
+ redundancy 4.474642135263432
+the number of node really move A-> B is : 6348
+the number of node ready to move B->A is : 8242
+ redundancy 4.453407369550304
+the number of node really  move  from B->A is : 8242
+			one update redundancy spend time _*_	 26.410051584243774
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  28896 18883
+			 len_A_part, len_B_part: ( 134586, 107224)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.453407369550304 4.957332486152741 3.9494822529478664
+the number of node ready to move A-> B is : 1915
+
+ redundancy 4.483721701175463
+the number of node really move A-> B is : 1915
+the number of node ready to move B->A is : 3611
+ redundancy 4.424732148201353
+the number of node really  move  from B->A is : 3611
+			one update redundancy spend time _*_	 26.247273206710815
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  30592 17187
+			 len_A_part, len_B_part: ( 138205, 102048)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.424732148201353 5.090634510638102 3.7588297857646036
+		update redundancy of segment   79.25807046890259
+	walk terminate 1 spend time 79.3541612625122
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.474789471018597
+	--------------------------------------------------end of batch 3
+-------------------------------------------------------------  compare batch pair  (4,5)
+batch_seeds_list len 
+14720, 16369, 17027, 28600, 19179, 19179, 19179, 19178, 
+
+	preparing two sides time :  0.08210253715515137
+	InitializeBitList time :  0.007402658462524414
+	getRedundancyCost: time   0.00010824203491210938
+
+					length of partitions 109427, 109549
+
+	before terminate 1 the redundancy rate:  4.032874290371148
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 12638
+
+ redundancy 3.543701166254587
+the number of node really move A-> B is : 12638
+the number of node ready to move B->A is : 12670
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 3.9068653857664453
+the number of node really  move  from B->A is : 6335
+			one update redundancy spend time _*_	 22.3696346282959
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  12876 25482
+			 len_A_part, len_B_part: ( 84866, 127268)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9068653857664453 3.125949049454167 4.687781722078723
+the number of node ready to move A-> B is : 5859
+
+ redundancy 4.003204552674835
+the number of node really move A-> B is : 5859
+the number of node ready to move B->A is : 4655
+ redundancy 3.9360194483196818
+the number of node really  move  from B->A is : 4655
+			one update redundancy spend time _*_	 23.989622831344604
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  24278 14080
+			 len_A_part, len_B_part: ( 123550, 90167)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9360194483196818 4.550833137653034 3.32120575898633
+the number of node ready to move A-> B is : 2275
+
+ redundancy 3.976739367653356
+the number of node really move A-> B is : 2275
+the number of node ready to move B->A is : 1300
+ redundancy 3.9558729413281397
+the number of node really  move  from B->A is : 1300
+			one update redundancy spend time _*_	 24.144777297973633
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  23303 15055
+			 len_A_part, len_B_part: ( 120934, 93861)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 3.9558729413281397 4.454475553775248 3.457270328881031
+		update redundancy of segment   70.74737191200256
+	walk terminate 1 spend time 70.83567380905151
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.032874290371148
+	pass 0  
+partition_src_list len 
+92543, 99137, 101907, 134346, 93861, 120934, 109585, 109520, 
+
+	--------------------------------------------------end of batch 4
+-------------------------------------------------------------  compare batch pair  (5,6)
+batch_seeds_list len 
+14720, 16369, 17027, 28600, 15055, 23303, 19179, 19178, 
+
+	preparing two sides time :  0.08705019950866699
+	InitializeBitList time :  0.0064775943756103516
+	getRedundancyCost: time   9.703636169433594e-05
+
+					length of partitions 120934, 109585
+
+	before terminate 1 the redundancy rate:  4.245461368104571
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13238
+
+ redundancy 3.902463730080896
+the number of node really move A-> B is : 13238
+the number of node ready to move B->A is : 13499
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.178957691617056
+the number of node really  move  from B->A is : 6749
+			one update redundancy spend time _*_	 25.166783809661865
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  16814 25668
+			 len_A_part, len_B_part: ( 99749, 127159)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.178957691617056 3.6741485604836295 4.683766822750482
+the number of node ready to move A-> B is : 6235
+
+ redundancy 4.216638811000456
+the number of node really move A-> B is : 6235
+the number of node ready to move B->A is : 6466
+ redundancy 4.181793904903978
+the number of node really  move  from B->A is : 6466
+			one update redundancy spend time _*_	 24.72136902809143
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  25899 16583
+			 len_A_part, len_B_part: ( 127337, 99725)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.181793904903978 4.6903232638553165 3.673264545952641
+the number of node ready to move A-> B is : 2137
+
+ redundancy 4.216031051010401
+the number of node really move A-> B is : 2137
+the number of node ready to move B->A is : 2394
+ redundancy 4.17433503229876
+the number of node really  move  from B->A is : 2394
+			one update redundancy spend time _*_	 25.079580783843994
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  26156 16326
+			 len_A_part, len_B_part: ( 127754, 98903)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.17433503229876 4.705683016331248 3.6429870482662725
+		update redundancy of segment   75.23598313331604
+	walk terminate 1 spend time 75.32728385925293
+	after terminate 1, whether it has improvement:  False
+	after terminate 1 the  redundancy rate  4.245461368104571
+	pass 0  
+partition_src_list len 
+92543, 99137, 101907, 134346, 93861, 98903, 127754, 109520, 
+
+	--------------------------------------------------end of batch 5
+-------------------------------------------------------------  compare batch pair  (6,7)
+batch_seeds_list len 
+14720, 16369, 17027, 28600, 15055, 16326, 26156, 19178, 
+
+	preparing two sides time :  0.08295822143554688
+	InitializeBitList time :  0.009070873260498047
+	getRedundancyCost: time   9.298324584960938e-05
+
+					length of partitions 127754, 109520
+
+	before terminate 1 the redundancy rate:  4.369867996371857
+	--------------------------------------------------------------------------------
+	walk terminate 1
+the number of node ready to move A-> B is : 13413
+
+ redundancy 4.126506162778384
+the number of node really move A-> B is : 13413
+the number of node ready to move B->A is : 13995
+ redundancy 4.359664995326694
+the number of node really  move  from B->A is : 13995
+			one update redundancy spend time _*_	 26.034255504608154
+		  --------------------------------------------walk terminate 1 step  0
+			 length of A_o,B_o  26738 18596
+			 len_A_part, len_B_part: ( 129913, 106807)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.359664995326694 4.785207490181453 3.934122500471935
+			 ---balanced                  ----*---*----redundancy rate:  4.359664995326694
+the number of node ready to move A-> B is : 7041
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.3681552182180665
+the number of node really move A-> B is : 440
+the number of node ready to move B->A is : 3933
+ redundancy 4.290932865542311
+the number of node really  move  from B->A is : 3933
+			one update redundancy spend time _*_	 25.592876434326172
+		  --------------------------------------------walk terminate 1 step  1
+			 length of A_o,B_o  30231 15103
+			 len_A_part, len_B_part: ( 138161, 94827)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.290932865542311 5.089013817331289 3.4928519137533325
+the number of node ready to move A-> B is : 6429
+
+error move_group_nids_balance_redundancy_check !!!!!!!!!!!!!! B_o
+ redundancy 4.364434990400155
+the number of node really move A-> B is : 3214
+the number of node ready to move B->A is : 922
+ redundancy 4.347657131280762
+the number of node really  move  from B->A is : 922
+			one update redundancy spend time _*_	 25.472518920898438
+		  --------------------------------------------walk terminate 1 step  2
+			 length of A_o,B_o  27939 17395
+			 len_A_part, len_B_part: ( 133102, 102966)
+			 redundancy rate (ration_mean, ratio_A, ratio_B): 4.347657131280762 4.902670920986597 3.792643341574927
+		update redundancy of segment   77.39102053642273
+	walk terminate 1 spend time 77.48174238204956
+	after terminate 1, whether it has improvement:  True
+	after terminate 1 the  redundancy rate  4.359664995326694
+	--------------------------------------------------end of batch 6
+graph partition total spend  530.3166906833649
+random_init_graph_partition spend  530.3428041934967
+partition_len_list
+[92543, 99137, 101907, 134346, 93861, 98903, 127754, 109520]
+
+----main run function: block dataloader generation total  spend:  533.532655
+
+current Epoch training on CPU with block data loading Time(s): 0.6926
+----------------------------------------------------------pseudo_mini_loss sum 2.7229788303375244
+Epoch 00005 | Step 00007 | Loss 0.3399 | Train Acc 0.3465 | Speed (samples/sec) 207265.9314 | GPU 0.5523 GB
+		 current epoch data from CPU -> GPU time	:0.60682733 s
+		 current epoch GPU training time	:0.03809958 s
+		 current epoch total CPU time without optimizer step	:0.68298936 s
+		 avg batch tranfer data from CPU -> GPU time	:0.07585342 s
+		 avg batch GPU training time	:0.00476245 s
+		 avg batch  CPU time without optimizer step	:0.08537367 s
+----------------------------------------------------------------------------------------------------
+
+ avg time for block data loader generation 515.1160278717676
+
+ batch NID list generation time  511.7328608433406
+
+ connection checking time 1.991737167040507
+ total of block generation time 1.170548677444458
+ average of block generation time 0.14631858468055725
+====================================================================================================
+CPU memory usage 
+{'VmPeak': 29955.43359375, 'VmSize': 29038.91796875, 'VmHWM': 11345.24609375, 'VmRSS': 11036.19140625}
+
+ max nvidia-smi memory usage, 7.9852294921875 GB
+
+ Nvidia-smi: 7.6453857421875 GB
+    Memory Allocated: 0.2545480728149414  GigaBytes
+Max Memory Allocated: 0.5522880554199219  GigaBytes
+
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+	total avg epoch total cpu time:0.69978613 s
+	 avg epoch data from cpu -> GPU time	:0.61991869 s
+	 avg epoch GPU training time 		:0.03879735 s
+
+====================================================================================================
+
+	 avg batch training total cpu time	:0.08747327 s
+	 avg batch data from cpu -> GPU time	:0.07748984 s
+	 avg batch GPU training time 		:0.00484967 s
+
+====================================================================================================
+	 avg src nodes number per epoch 	:857044.0 
+	 ave src batch nodes 		:107130.5 
+
+====================================================================================================
+
+  0%|          | 0/13 [00:00<?, ?it/s]
+  8%|▊         | 1/13 [00:03<00:39,  3.31s/it]
+ 15%|█▌        | 2/13 [00:03<00:16,  1.52s/it]
+ 23%|██▎       | 3/13 [00:03<00:09,  1.07it/s]
+ 31%|███       | 4/13 [00:04<00:06,  1.46it/s]
+ 38%|███▊      | 5/13 [00:04<00:05,  1.41it/s]
+ 46%|████▌     | 6/13 [00:05<00:03,  1.81it/s]
+ 54%|█████▍    | 7/13 [00:05<00:02,  2.23it/s]
+ 62%|██████▏   | 8/13 [00:05<00:01,  2.61it/s]
+ 69%|██████▉   | 9/13 [00:05<00:01,  2.96it/s]
+ 77%|███████▋  | 10/13 [00:06<00:00,  3.26it/s]
+ 85%|████████▍ | 11/13 [00:06<00:00,  3.46it/s]
+ 92%|█████████▏| 12/13 [00:06<00:00,  3.58it/s]
+100%|██████████| 13/13 [00:06<00:00,  3.91it/s]
+100%|██████████| 13/13 [00:07<00:00,  1.82it/s]
+train Acc: 0.421153
+
+  0%|          | 0/13 [00:00<?, ?it/s]
+  8%|▊         | 1/13 [00:03<00:36,  3.04s/it]
+ 15%|█▌        | 2/13 [00:03<00:16,  1.46s/it]
+ 23%|██▎       | 3/13 [00:03<00:09,  1.06it/s]
+ 31%|███       | 4/13 [00:04<00:06,  1.42it/s]
+ 38%|███▊      | 5/13 [00:04<00:04,  1.76it/s]
+ 46%|████▌     | 6/13 [00:04<00:03,  2.19it/s]
+ 54%|█████▍    | 7/13 [00:04<00:02,  2.63it/s]
+ 62%|██████▏   | 8/13 [00:05<00:01,  3.00it/s]
+ 69%|██████▉   | 9/13 [00:05<00:01,  3.09it/s]
+ 77%|███████▋  | 10/13 [00:05<00:00,  3.01it/s]
+ 85%|████████▍ | 11/13 [00:05<00:00,  3.26it/s]
+ 92%|█████████▏| 12/13 [00:06<00:00,  3.48it/s]
+100%|██████████| 13/13 [00:06<00:00,  3.99it/s]
+100%|██████████| 13/13 [00:06<00:00,  1.95it/s]
+Test Acc: 0.413748
+average batch nodes
+107130.5
